@@ -81,17 +81,20 @@ node qa/playtest.mjs --browser=chrome --no-strict-checks
 - 截图：`qa/shots/pt-<关号>-start.png` / `pt-<关号>-done.png`、`pt-title-*.png`、`pt-level-map.png`、
   `pt-ending.png`、`pt-ending-restart.png`、`pt-restart-level1.png` 等（1440x900）。
 - 覆盖：标题开始（20 个进度点）、每关真实鼠标/键盘通关、每关存档断言、L4 后与 L10 幕边界刷新续档、
-  旧 10 关存档迁移（finished -> 第 11 关）、提示重播、静音、20 格关卡地图、结局（20/20）与再玩一次。
+  旧 10 关存档迁移（finished -> 第 11 关）、提示重播、静音、关卡地图、结局（20/20）与再玩一次。
+- 关卡地图检查覆盖两种模式：开始按钮打开 → `data-mode="free"` 且 20 格全部解锁（`.is-locked` = 0）；
+  切 `[data-t=map-tab-progress]` → `data-mode="progress"` 且存在 `.is-locked`；切回 free 恢复 0 锁；
+  另外验证玻璃罐打开默认是 progress 模式。截图 `pt-level-map-free/-progress/-jar.png`。
 - 第二幕（L11-L19）真实实现已按下表校准（2026-10-21）：
   L11 点幽灵×3→拖卡片；L12 迷你窗口右键建文件夹→拖出窗口；L13 上拖任务栏抽屉→点文件夹；
-  L14 建房→等 rival 抢走→极速点两次眩晕→拖进 safe-zone（用 elementFromPoint 躲遮挡）；
+  L14 建房→等 rival 抢走→极速点两次（rival 120px 内算命中）眩晕→**等掉落/弹跳动画位置稳定**后
+  用 elementFromPoint 找未遮挡命中点拖进 safe-zone（黄金窗口 3.4s，判定已放宽）；
   L15 点真图标；L16 从屏幕外窗口可见标题栏起拖（按窗口中心算 delta）→真窗口入槽→Enter；
   L17 等 boss 闭眼建房→2.4s 窗口内拖进罐；L18 假结局 Ctrl+Shift+F→确定→拖到 rewind-target；
-  L19 token→槽位→run-btn。
-  L20（Lead 实现）solver 已按 `exam-panel` / `exam-method` / `terminal-icon` / `crack-target` 写好，
-  等 L20 的 init bug 修复后即可跑通。
+  L19 token→槽位→run-btn；L20（Lead 实现）exam-panel/exam-method/terminal-icon/crack-target。
 - `cdp.mjs` 的 `rect()` 默认**不滚动页面**：游戏元素全屏绝对定位，off-screen 元素（如 L16 屏幕边缘窗口）
   若被 `scrollIntoView` 会滚走整个文档、导致 Input 坐标错位；需要滚动时显式传 `{ scroll: true }`。
+- 调试：`QA_DEBUG_SOLVERS=1` 会打印 L14 各步骤耗时（点击命中/眩晕/拖拽/完成），用于排查慢路径。
 - 占位关（作者未交付时）：`solveLevel` 会检测 `[data-t="placeholder-<N>"]` 直接点过；
   作者交付真实实现后自动切换为 ACT3 规范的 solver。
 - `--no-strict-checks`：附加检查失败只记录、不计入总结果（用于隔离游戏逻辑问题）。

@@ -1,7 +1,7 @@
 {
-  "startedAt": "2026-10-21T05:57:05.925Z",
+  "startedAt": "2026-10-21T06:53:50.313Z",
   "browser": "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe",
-  "url": "http://127.0.0.1:8767/",
+  "url": "http://127.0.0.1:5861/",
   "mode": "full",
   "ok": true,
   "phases": {
@@ -13,7 +13,7 @@
           "level": 1,
           "phase": "independent",
           "ok": true,
-          "durationMs": 3028,
+          "durationMs": 2907,
           "error": null,
           "consoleErrors": [],
           "screenshots": [
@@ -25,7 +25,7 @@
           "level": 2,
           "phase": "independent",
           "ok": true,
-          "durationMs": 2777,
+          "durationMs": 2768,
           "error": null,
           "consoleErrors": [],
           "screenshots": [
@@ -37,7 +37,7 @@
           "level": 3,
           "phase": "independent",
           "ok": true,
-          "durationMs": 2561,
+          "durationMs": 2459,
           "error": null,
           "consoleErrors": [],
           "screenshots": [
@@ -49,7 +49,7 @@
           "level": 4,
           "phase": "independent",
           "ok": true,
-          "durationMs": 3669,
+          "durationMs": 3832,
           "error": null,
           "consoleErrors": [],
           "screenshots": [
@@ -61,7 +61,7 @@
           "level": 5,
           "phase": "independent",
           "ok": true,
-          "durationMs": 6432,
+          "durationMs": 6263,
           "error": null,
           "consoleErrors": [],
           "screenshots": [
@@ -73,7 +73,7 @@
           "level": 6,
           "phase": "independent",
           "ok": true,
-          "durationMs": 14078,
+          "durationMs": 13892,
           "error": null,
           "consoleErrors": [],
           "screenshots": [
@@ -85,7 +85,7 @@
           "level": 7,
           "phase": "independent",
           "ok": true,
-          "durationMs": 4901,
+          "durationMs": 5014,
           "error": null,
           "consoleErrors": [],
           "screenshots": [
@@ -97,7 +97,7 @@
           "level": 8,
           "phase": "independent",
           "ok": true,
-          "durationMs": 11051,
+          "durationMs": 12419,
           "error": null,
           "consoleErrors": [],
           "screenshots": [
@@ -109,7 +109,7 @@
           "level": 9,
           "phase": "independent",
           "ok": true,
-          "durationMs": 10013,
+          "durationMs": 9900,
           "error": null,
           "consoleErrors": [],
           "screenshots": [
@@ -121,7 +121,7 @@
           "level": 10,
           "phase": "independent",
           "ok": true,
-          "durationMs": 9437,
+          "durationMs": 9198,
           "error": null,
           "consoleErrors": [],
           "screenshots": [
@@ -133,7 +133,7 @@
           "level": 11,
           "phase": "independent",
           "ok": true,
-          "durationMs": 6253,
+          "durationMs": 6219,
           "error": null,
           "consoleErrors": [],
           "screenshots": [
@@ -145,7 +145,7 @@
           "level": 12,
           "phase": "independent",
           "ok": true,
-          "durationMs": 6094,
+          "durationMs": 5988,
           "error": null,
           "consoleErrors": [],
           "screenshots": [
@@ -157,7 +157,7 @@
           "level": 13,
           "phase": "independent",
           "ok": true,
-          "durationMs": 5609,
+          "durationMs": 5414,
           "error": null,
           "consoleErrors": [],
           "screenshots": [
@@ -169,7 +169,7 @@
           "level": 14,
           "phase": "independent",
           "ok": true,
-          "durationMs": 18926,
+          "durationMs": 9660,
           "error": null,
           "consoleErrors": [],
           "screenshots": [
@@ -181,7 +181,7 @@
           "level": 15,
           "phase": "independent",
           "ok": true,
-          "durationMs": 3594,
+          "durationMs": 3699,
           "error": null,
           "consoleErrors": [],
           "screenshots": [
@@ -193,7 +193,7 @@
           "level": 16,
           "phase": "independent",
           "ok": true,
-          "durationMs": 9837,
+          "durationMs": 9914,
           "error": null,
           "consoleErrors": [],
           "screenshots": [
@@ -205,7 +205,7 @@
           "level": 17,
           "phase": "independent",
           "ok": true,
-          "durationMs": 12653,
+          "durationMs": 13417,
           "error": null,
           "consoleErrors": [],
           "screenshots": [
@@ -217,7 +217,7 @@
           "level": 18,
           "phase": "independent",
           "ok": true,
-          "durationMs": 6998,
+          "durationMs": 7243,
           "error": null,
           "consoleErrors": [],
           "screenshots": [
@@ -229,7 +229,7 @@
           "level": 19,
           "phase": "independent",
           "ok": true,
-          "durationMs": 7356,
+          "durationMs": 7293,
           "error": null,
           "consoleErrors": [],
           "screenshots": [
@@ -241,7 +241,7 @@
           "level": 20,
           "phase": "independent",
           "ok": true,
-          "durationMs": 13411,
+          "durationMs": 13185,
           "error": null,
           "consoleErrors": [],
           "screenshots": [
@@ -250,7 +250,7 @@
           ]
         }
       ],
-      "durationMs": 159834
+      "durationMs": 151902
     },
     "continuous": {
       "name": "continuous",
@@ -260,7 +260,7 @@
           "level": 1,
           "phase": "continuous",
           "ok": true,
-          "durationMs": 4066,
+          "durationMs": 3670,
           "error": null,
           "consoleErrors": [],
           "screenshots": [
@@ -273,7 +273,7 @@
           "level": 2,
           "phase": "continuous",
           "ok": true,
-          "durationMs": 3286,
+          "durationMs": 3145,
           "error": null,
           "consoleErrors": [],
           "screenshots": [
@@ -285,7 +285,7 @@
           "level": 3,
           "phase": "continuous",
           "ok": true,
-          "durationMs": 3306,
+          "durationMs": 5568,
           "error": null,
           "consoleErrors": [],
           "screenshots": [
@@ -297,7 +297,7 @@
           "level": 4,
           "phase": "continuous",
           "ok": true,
-          "durationMs": 8153,
+          "durationMs": 8305,
           "error": null,
           "consoleErrors": [],
           "screenshots": [
@@ -309,7 +309,7 @@
           "level": 5,
           "phase": "continuous",
           "ok": true,
-          "durationMs": 5987,
+          "durationMs": 5674,
           "error": null,
           "consoleErrors": [],
           "screenshots": [
@@ -321,7 +321,7 @@
           "level": 6,
           "phase": "continuous",
           "ok": true,
-          "durationMs": 13513,
+          "durationMs": 13805,
           "error": null,
           "consoleErrors": [],
           "screenshots": [
@@ -333,7 +333,7 @@
           "level": 7,
           "phase": "continuous",
           "ok": true,
-          "durationMs": 3686,
+          "durationMs": 3951,
           "error": null,
           "consoleErrors": [],
           "screenshots": [
@@ -345,7 +345,7 @@
           "level": 8,
           "phase": "continuous",
           "ok": true,
-          "durationMs": 11317,
+          "durationMs": 10848,
           "error": null,
           "consoleErrors": [],
           "screenshots": [
@@ -357,7 +357,7 @@
           "level": 9,
           "phase": "continuous",
           "ok": true,
-          "durationMs": 10121,
+          "durationMs": 9932,
           "error": null,
           "consoleErrors": [],
           "screenshots": [
@@ -369,7 +369,7 @@
           "level": 10,
           "phase": "continuous",
           "ok": true,
-          "durationMs": 13428,
+          "durationMs": 13398,
           "error": null,
           "consoleErrors": [],
           "screenshots": [
@@ -381,7 +381,7 @@
           "level": 11,
           "phase": "continuous",
           "ok": true,
-          "durationMs": 6218,
+          "durationMs": 5818,
           "error": null,
           "consoleErrors": [],
           "screenshots": [
@@ -393,7 +393,7 @@
           "level": 12,
           "phase": "continuous",
           "ok": true,
-          "durationMs": 5871,
+          "durationMs": 5813,
           "error": null,
           "consoleErrors": [],
           "screenshots": [
@@ -405,7 +405,7 @@
           "level": 13,
           "phase": "continuous",
           "ok": true,
-          "durationMs": 5358,
+          "durationMs": 5333,
           "error": null,
           "consoleErrors": [],
           "screenshots": [
@@ -417,7 +417,7 @@
           "level": 14,
           "phase": "continuous",
           "ok": true,
-          "durationMs": 9518,
+          "durationMs": 9749,
           "error": null,
           "consoleErrors": [],
           "screenshots": [
@@ -429,7 +429,7 @@
           "level": 15,
           "phase": "continuous",
           "ok": true,
-          "durationMs": 3207,
+          "durationMs": 3417,
           "error": null,
           "consoleErrors": [],
           "screenshots": [
@@ -441,7 +441,7 @@
           "level": 16,
           "phase": "continuous",
           "ok": true,
-          "durationMs": 10421,
+          "durationMs": 10424,
           "error": null,
           "consoleErrors": [],
           "screenshots": [
@@ -453,7 +453,7 @@
           "level": 17,
           "phase": "continuous",
           "ok": true,
-          "durationMs": 12641,
+          "durationMs": 12753,
           "error": null,
           "consoleErrors": [],
           "screenshots": [
@@ -465,7 +465,7 @@
           "level": 18,
           "phase": "continuous",
           "ok": true,
-          "durationMs": 7742,
+          "durationMs": 7445,
           "error": null,
           "consoleErrors": [],
           "screenshots": [
@@ -477,7 +477,7 @@
           "level": 19,
           "phase": "continuous",
           "ok": true,
-          "durationMs": 6912,
+          "durationMs": 7051,
           "error": null,
           "consoleErrors": [],
           "screenshots": [
@@ -489,7 +489,7 @@
           "level": 20,
           "phase": "continuous",
           "ok": true,
-          "durationMs": 14318,
+          "durationMs": 13825,
           "error": null,
           "consoleErrors": [],
           "screenshots": [
@@ -498,7 +498,7 @@
           ]
         }
       ],
-      "durationMs": 164576,
+      "durationMs": 165338,
       "maxLevel": 20
     }
   },
@@ -507,7 +507,7 @@
       "level": 1,
       "phase": "independent",
       "ok": true,
-      "durationMs": 3028,
+      "durationMs": 2907,
       "error": null,
       "consoleErrors": [],
       "screenshots": [
@@ -519,7 +519,7 @@
       "level": 2,
       "phase": "independent",
       "ok": true,
-      "durationMs": 2777,
+      "durationMs": 2768,
       "error": null,
       "consoleErrors": [],
       "screenshots": [
@@ -531,7 +531,7 @@
       "level": 3,
       "phase": "independent",
       "ok": true,
-      "durationMs": 2561,
+      "durationMs": 2459,
       "error": null,
       "consoleErrors": [],
       "screenshots": [
@@ -543,7 +543,7 @@
       "level": 4,
       "phase": "independent",
       "ok": true,
-      "durationMs": 3669,
+      "durationMs": 3832,
       "error": null,
       "consoleErrors": [],
       "screenshots": [
@@ -555,7 +555,7 @@
       "level": 5,
       "phase": "independent",
       "ok": true,
-      "durationMs": 6432,
+      "durationMs": 6263,
       "error": null,
       "consoleErrors": [],
       "screenshots": [
@@ -567,7 +567,7 @@
       "level": 6,
       "phase": "independent",
       "ok": true,
-      "durationMs": 14078,
+      "durationMs": 13892,
       "error": null,
       "consoleErrors": [],
       "screenshots": [
@@ -579,7 +579,7 @@
       "level": 7,
       "phase": "independent",
       "ok": true,
-      "durationMs": 4901,
+      "durationMs": 5014,
       "error": null,
       "consoleErrors": [],
       "screenshots": [
@@ -591,7 +591,7 @@
       "level": 8,
       "phase": "independent",
       "ok": true,
-      "durationMs": 11051,
+      "durationMs": 12419,
       "error": null,
       "consoleErrors": [],
       "screenshots": [
@@ -603,7 +603,7 @@
       "level": 9,
       "phase": "independent",
       "ok": true,
-      "durationMs": 10013,
+      "durationMs": 9900,
       "error": null,
       "consoleErrors": [],
       "screenshots": [
@@ -615,7 +615,7 @@
       "level": 10,
       "phase": "independent",
       "ok": true,
-      "durationMs": 9437,
+      "durationMs": 9198,
       "error": null,
       "consoleErrors": [],
       "screenshots": [
@@ -627,7 +627,7 @@
       "level": 11,
       "phase": "independent",
       "ok": true,
-      "durationMs": 6253,
+      "durationMs": 6219,
       "error": null,
       "consoleErrors": [],
       "screenshots": [
@@ -639,7 +639,7 @@
       "level": 12,
       "phase": "independent",
       "ok": true,
-      "durationMs": 6094,
+      "durationMs": 5988,
       "error": null,
       "consoleErrors": [],
       "screenshots": [
@@ -651,7 +651,7 @@
       "level": 13,
       "phase": "independent",
       "ok": true,
-      "durationMs": 5609,
+      "durationMs": 5414,
       "error": null,
       "consoleErrors": [],
       "screenshots": [
@@ -663,7 +663,7 @@
       "level": 14,
       "phase": "independent",
       "ok": true,
-      "durationMs": 18926,
+      "durationMs": 9660,
       "error": null,
       "consoleErrors": [],
       "screenshots": [
@@ -675,7 +675,7 @@
       "level": 15,
       "phase": "independent",
       "ok": true,
-      "durationMs": 3594,
+      "durationMs": 3699,
       "error": null,
       "consoleErrors": [],
       "screenshots": [
@@ -687,7 +687,7 @@
       "level": 16,
       "phase": "independent",
       "ok": true,
-      "durationMs": 9837,
+      "durationMs": 9914,
       "error": null,
       "consoleErrors": [],
       "screenshots": [
@@ -699,7 +699,7 @@
       "level": 17,
       "phase": "independent",
       "ok": true,
-      "durationMs": 12653,
+      "durationMs": 13417,
       "error": null,
       "consoleErrors": [],
       "screenshots": [
@@ -711,7 +711,7 @@
       "level": 18,
       "phase": "independent",
       "ok": true,
-      "durationMs": 6998,
+      "durationMs": 7243,
       "error": null,
       "consoleErrors": [],
       "screenshots": [
@@ -723,7 +723,7 @@
       "level": 19,
       "phase": "independent",
       "ok": true,
-      "durationMs": 7356,
+      "durationMs": 7293,
       "error": null,
       "consoleErrors": [],
       "screenshots": [
@@ -735,7 +735,7 @@
       "level": 20,
       "phase": "independent",
       "ok": true,
-      "durationMs": 13411,
+      "durationMs": 13185,
       "error": null,
       "consoleErrors": [],
       "screenshots": [
@@ -747,7 +747,7 @@
       "level": 1,
       "phase": "continuous",
       "ok": true,
-      "durationMs": 4066,
+      "durationMs": 3670,
       "error": null,
       "consoleErrors": [],
       "screenshots": [
@@ -760,7 +760,7 @@
       "level": 2,
       "phase": "continuous",
       "ok": true,
-      "durationMs": 3286,
+      "durationMs": 3145,
       "error": null,
       "consoleErrors": [],
       "screenshots": [
@@ -772,7 +772,7 @@
       "level": 3,
       "phase": "continuous",
       "ok": true,
-      "durationMs": 3306,
+      "durationMs": 5568,
       "error": null,
       "consoleErrors": [],
       "screenshots": [
@@ -784,7 +784,7 @@
       "level": 4,
       "phase": "continuous",
       "ok": true,
-      "durationMs": 8153,
+      "durationMs": 8305,
       "error": null,
       "consoleErrors": [],
       "screenshots": [
@@ -796,7 +796,7 @@
       "level": 5,
       "phase": "continuous",
       "ok": true,
-      "durationMs": 5987,
+      "durationMs": 5674,
       "error": null,
       "consoleErrors": [],
       "screenshots": [
@@ -808,7 +808,7 @@
       "level": 6,
       "phase": "continuous",
       "ok": true,
-      "durationMs": 13513,
+      "durationMs": 13805,
       "error": null,
       "consoleErrors": [],
       "screenshots": [
@@ -820,7 +820,7 @@
       "level": 7,
       "phase": "continuous",
       "ok": true,
-      "durationMs": 3686,
+      "durationMs": 3951,
       "error": null,
       "consoleErrors": [],
       "screenshots": [
@@ -832,7 +832,7 @@
       "level": 8,
       "phase": "continuous",
       "ok": true,
-      "durationMs": 11317,
+      "durationMs": 10848,
       "error": null,
       "consoleErrors": [],
       "screenshots": [
@@ -844,7 +844,7 @@
       "level": 9,
       "phase": "continuous",
       "ok": true,
-      "durationMs": 10121,
+      "durationMs": 9932,
       "error": null,
       "consoleErrors": [],
       "screenshots": [
@@ -856,7 +856,7 @@
       "level": 10,
       "phase": "continuous",
       "ok": true,
-      "durationMs": 13428,
+      "durationMs": 13398,
       "error": null,
       "consoleErrors": [],
       "screenshots": [
@@ -868,7 +868,7 @@
       "level": 11,
       "phase": "continuous",
       "ok": true,
-      "durationMs": 6218,
+      "durationMs": 5818,
       "error": null,
       "consoleErrors": [],
       "screenshots": [
@@ -880,7 +880,7 @@
       "level": 12,
       "phase": "continuous",
       "ok": true,
-      "durationMs": 5871,
+      "durationMs": 5813,
       "error": null,
       "consoleErrors": [],
       "screenshots": [
@@ -892,7 +892,7 @@
       "level": 13,
       "phase": "continuous",
       "ok": true,
-      "durationMs": 5358,
+      "durationMs": 5333,
       "error": null,
       "consoleErrors": [],
       "screenshots": [
@@ -904,7 +904,7 @@
       "level": 14,
       "phase": "continuous",
       "ok": true,
-      "durationMs": 9518,
+      "durationMs": 9749,
       "error": null,
       "consoleErrors": [],
       "screenshots": [
@@ -916,7 +916,7 @@
       "level": 15,
       "phase": "continuous",
       "ok": true,
-      "durationMs": 3207,
+      "durationMs": 3417,
       "error": null,
       "consoleErrors": [],
       "screenshots": [
@@ -928,7 +928,7 @@
       "level": 16,
       "phase": "continuous",
       "ok": true,
-      "durationMs": 10421,
+      "durationMs": 10424,
       "error": null,
       "consoleErrors": [],
       "screenshots": [
@@ -940,7 +940,7 @@
       "level": 17,
       "phase": "continuous",
       "ok": true,
-      "durationMs": 12641,
+      "durationMs": 12753,
       "error": null,
       "consoleErrors": [],
       "screenshots": [
@@ -952,7 +952,7 @@
       "level": 18,
       "phase": "continuous",
       "ok": true,
-      "durationMs": 7742,
+      "durationMs": 7445,
       "error": null,
       "consoleErrors": [],
       "screenshots": [
@@ -964,7 +964,7 @@
       "level": 19,
       "phase": "continuous",
       "ok": true,
-      "durationMs": 6912,
+      "durationMs": 7051,
       "error": null,
       "consoleErrors": [],
       "screenshots": [
@@ -976,7 +976,7 @@
       "level": 20,
       "phase": "continuous",
       "ok": true,
-      "durationMs": 14318,
+      "durationMs": 13825,
       "error": null,
       "consoleErrors": [],
       "screenshots": [
@@ -1025,7 +1025,9 @@
       "ok": true,
       "detail": "",
       "screenshots": [
-        "pt-level-map.png"
+        "pt-level-map-free.png",
+        "pt-level-map-progress.png",
+        "pt-level-map-jar.png"
       ]
     },
     {
@@ -1047,609 +1049,623 @@
       "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-title-independent.png",
       "width": 1440,
       "height": 900,
-      "bytes": 1174479
+      "bytes": 1173771
     },
     {
       "name": "pt-01-start.png",
       "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-01-start.png",
       "width": 1440,
       "height": 900,
-      "bytes": 1274007
+      "bytes": 1274685
     },
     {
       "name": "pt-01-done.png",
       "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-01-done.png",
       "width": 1440,
       "height": 900,
-      "bytes": 273569
+      "bytes": 791566
     },
     {
       "name": "pt-02-start.png",
       "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-02-start.png",
       "width": 1440,
       "height": 900,
-      "bytes": 1277797
+      "bytes": 1277125
     },
     {
       "name": "pt-02-done.png",
       "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-02-done.png",
       "width": 1440,
       "height": 900,
-      "bytes": 877350
+      "bytes": 875606
     },
     {
       "name": "pt-03-start.png",
       "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-03-start.png",
       "width": 1440,
       "height": 900,
-      "bytes": 1275382
+      "bytes": 1275219
     },
     {
       "name": "pt-03-done.png",
       "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-03-done.png",
       "width": 1440,
       "height": 900,
-      "bytes": 879988
+      "bytes": 879728
     },
     {
       "name": "pt-04-start.png",
       "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-04-start.png",
       "width": 1440,
       "height": 900,
-      "bytes": 1276197
+      "bytes": 1276515
     },
     {
       "name": "pt-04-done.png",
       "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-04-done.png",
       "width": 1440,
       "height": 900,
-      "bytes": 792308
+      "bytes": 791804
     },
     {
       "name": "pt-05-start.png",
       "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-05-start.png",
       "width": 1440,
       "height": 900,
-      "bytes": 1287323
+      "bytes": 1287038
     },
     {
       "name": "pt-05-done.png",
       "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-05-done.png",
       "width": 1440,
       "height": 900,
-      "bytes": 919649
+      "bytes": 1285652
     },
     {
       "name": "pt-06-start.png",
       "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-06-start.png",
       "width": 1440,
       "height": 900,
-      "bytes": 1277285
+      "bytes": 1277748
     },
     {
       "name": "pt-06-done.png",
       "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-06-done.png",
       "width": 1440,
       "height": 900,
-      "bytes": 1257635
+      "bytes": 1256494
     },
     {
       "name": "pt-07-start.png",
       "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-07-start.png",
       "width": 1440,
       "height": 900,
-      "bytes": 1275229
+      "bytes": 1275395
     },
     {
       "name": "pt-07-done.png",
       "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-07-done.png",
       "width": 1440,
       "height": 900,
-      "bytes": 709122
+      "bytes": 709719
     },
     {
       "name": "pt-08-start.png",
       "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-08-start.png",
       "width": 1440,
       "height": 900,
-      "bytes": 1079000
+      "bytes": 1078690
     },
     {
       "name": "pt-08-done.png",
       "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-08-done.png",
       "width": 1440,
       "height": 900,
-      "bytes": 710680
+      "bytes": 763383
     },
     {
       "name": "pt-09-start.png",
       "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-09-start.png",
       "width": 1440,
       "height": 900,
-      "bytes": 1288783
+      "bytes": 1285692
     },
     {
       "name": "pt-09-done.png",
       "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-09-done.png",
       "width": 1440,
       "height": 900,
-      "bytes": 1276654
+      "bytes": 1277955
     },
     {
       "name": "pt-10-start.png",
       "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-10-start.png",
       "width": 1440,
       "height": 900,
-      "bytes": 1278274
+      "bytes": 1280204
     },
     {
       "name": "pt-10-done.png",
       "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-10-done.png",
       "width": 1440,
       "height": 900,
-      "bytes": 543314
+      "bytes": 541890
     },
     {
       "name": "pt-11-start.png",
       "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-11-start.png",
       "width": 1440,
       "height": 900,
-      "bytes": 1310575
+      "bytes": 1309377
     },
     {
       "name": "pt-11-done.png",
       "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-11-done.png",
       "width": 1440,
       "height": 900,
-      "bytes": 981217
+      "bytes": 898429
     },
     {
       "name": "pt-12-start.png",
       "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-12-start.png",
       "width": 1440,
       "height": 900,
-      "bytes": 1241937
+      "bytes": 1243095
     },
     {
       "name": "pt-12-done.png",
       "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-12-done.png",
       "width": 1440,
       "height": 900,
-      "bytes": 803712
+      "bytes": 911331
     },
     {
       "name": "pt-13-start.png",
       "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-13-start.png",
       "width": 1440,
       "height": 900,
-      "bytes": 1269660
+      "bytes": 1270307
     },
     {
       "name": "pt-13-done.png",
       "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-13-done.png",
       "width": 1440,
       "height": 900,
-      "bytes": 779637
+      "bytes": 781181
     },
     {
       "name": "pt-14-start.png",
       "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-14-start.png",
       "width": 1440,
       "height": 900,
-      "bytes": 1275627
+      "bytes": 1275549
     },
     {
       "name": "pt-14-done.png",
       "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-14-done.png",
       "width": 1440,
       "height": 900,
-      "bytes": 888826
+      "bytes": 803777
     },
     {
       "name": "pt-15-start.png",
       "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-15-start.png",
       "width": 1440,
       "height": 900,
-      "bytes": 122429
+      "bytes": 126868
     },
     {
       "name": "pt-15-done.png",
       "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-15-done.png",
       "width": 1440,
       "height": 900,
-      "bytes": 847958
+      "bytes": 753288
     },
     {
       "name": "pt-16-start.png",
       "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-16-start.png",
       "width": 1440,
       "height": 900,
-      "bytes": 1278235
+      "bytes": 1275874
     },
     {
       "name": "pt-16-done.png",
       "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-16-done.png",
       "width": 1440,
       "height": 900,
-      "bytes": 839203
+      "bytes": 848360
     },
     {
       "name": "pt-17-start.png",
       "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-17-start.png",
       "width": 1440,
       "height": 900,
-      "bytes": 1253577
+      "bytes": 1256228
     },
     {
       "name": "pt-17-done.png",
       "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-17-done.png",
       "width": 1440,
       "height": 900,
-      "bytes": 1263083
+      "bytes": 1263603
     },
     {
       "name": "pt-18-start.png",
       "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-18-start.png",
       "width": 1440,
       "height": 900,
-      "bytes": 330887
+      "bytes": 331305
     },
     {
       "name": "pt-18-done.png",
       "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-18-done.png",
       "width": 1440,
       "height": 900,
-      "bytes": 1117937
+      "bytes": 1119997
     },
     {
       "name": "pt-19-start.png",
       "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-19-start.png",
       "width": 1440,
       "height": 900,
-      "bytes": 1091227
+      "bytes": 1092280
     },
     {
       "name": "pt-19-done.png",
       "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-19-done.png",
       "width": 1440,
       "height": 900,
-      "bytes": 815612
+      "bytes": 722293
     },
     {
       "name": "pt-20-start.png",
       "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-20-start.png",
       "width": 1440,
       "height": 900,
-      "bytes": 1297637
+      "bytes": 1297087
     },
     {
       "name": "pt-20-done.png",
       "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-20-done.png",
       "width": 1440,
       "height": 900,
-      "bytes": 1080771
+      "bytes": 1129949
     },
     {
       "name": "pt-title-run.png",
       "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-title-run.png",
       "width": 1440,
       "height": 900,
-      "bytes": 1172302
+      "bytes": 1172317
     },
     {
       "name": "pt-run-01-hint.png",
       "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-run-01-hint.png",
       "width": 1440,
       "height": 900,
-      "bytes": 1272345
+      "bytes": 1277645
     },
     {
       "name": "pt-run-01-start.png",
       "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-run-01-start.png",
       "width": 1440,
       "height": 900,
-      "bytes": 1256554
+      "bytes": 1260821
     },
     {
       "name": "pt-run-01-done.png",
       "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-run-01-done.png",
       "width": 1440,
       "height": 900,
-      "bytes": 876952
+      "bytes": 873998
     },
     {
       "name": "pt-run-02-start.png",
       "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-run-02-start.png",
       "width": 1440,
       "height": 900,
-      "bytes": 1276961
+      "bytes": 1278589
     },
     {
       "name": "pt-run-02-done.png",
       "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-run-02-done.png",
       "width": 1440,
       "height": 900,
-      "bytes": 882712
+      "bytes": 879077
     },
     {
-      "name": "pt-level-map.png",
-      "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-level-map.png",
+      "name": "pt-level-map-free.png",
+      "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-level-map-free.png",
       "width": 1440,
       "height": 900,
-      "bytes": 1230334
+      "bytes": 1241401
+    },
+    {
+      "name": "pt-level-map-progress.png",
+      "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-level-map-progress.png",
+      "width": 1440,
+      "height": 900,
+      "bytes": 1205040
+    },
+    {
+      "name": "pt-level-map-jar.png",
+      "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-level-map-jar.png",
+      "width": 1440,
+      "height": 900,
+      "bytes": 1207565
     },
     {
       "name": "pt-run-03-start.png",
       "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-run-03-start.png",
       "width": 1440,
       "height": 900,
-      "bytes": 1255070
+      "bytes": 1254407
     },
     {
       "name": "pt-run-03-done.png",
       "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-run-03-done.png",
       "width": 1440,
       "height": 900,
-      "bytes": 885917
+      "bytes": 888239
     },
     {
       "name": "pt-run-04-start.png",
       "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-run-04-start.png",
       "width": 1440,
       "height": 900,
-      "bytes": 1279659
+      "bytes": 1277572
     },
     {
       "name": "pt-run-04-done.png",
       "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-run-04-done.png",
       "width": 1440,
       "height": 900,
-      "bytes": 788718
+      "bytes": 795030
     },
     {
       "name": "pt-run-05-start.png",
       "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-run-05-start.png",
       "width": 1440,
       "height": 900,
-      "bytes": 1289570
+      "bytes": 1288175
     },
     {
       "name": "pt-run-05-done.png",
       "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-run-05-done.png",
       "width": 1440,
       "height": 900,
-      "bytes": 1282677
+      "bytes": 913049
     },
     {
       "name": "pt-run-06-start.png",
       "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-run-06-start.png",
       "width": 1440,
       "height": 900,
-      "bytes": 1274901
+      "bytes": 1274976
     },
     {
       "name": "pt-run-06-done.png",
       "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-run-06-done.png",
       "width": 1440,
       "height": 900,
-      "bytes": 1260524
+      "bytes": 1261051
     },
     {
       "name": "pt-run-07-start.png",
       "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-run-07-start.png",
       "width": 1440,
       "height": 900,
-      "bytes": 1278221
+      "bytes": 1278400
     },
     {
       "name": "pt-run-07-done.png",
       "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-run-07-done.png",
       "width": 1440,
       "height": 900,
-      "bytes": 776460
+      "bytes": 801611
     },
     {
       "name": "pt-run-08-start.png",
       "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-run-08-start.png",
       "width": 1440,
       "height": 900,
-      "bytes": 1078478
+      "bytes": 1078666
     },
     {
       "name": "pt-run-08-done.png",
       "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-run-08-done.png",
       "width": 1440,
       "height": 900,
-      "bytes": 763662
+      "bytes": 713997
     },
     {
       "name": "pt-run-09-start.png",
       "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-run-09-start.png",
       "width": 1440,
       "height": 900,
-      "bytes": 1288120
+      "bytes": 1287000
     },
     {
       "name": "pt-run-09-done.png",
       "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-run-09-done.png",
       "width": 1440,
       "height": 900,
-      "bytes": 1278543
+      "bytes": 1278511
     },
     {
       "name": "pt-run-10-start.png",
       "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-run-10-start.png",
       "width": 1440,
       "height": 900,
-      "bytes": 1260217
+      "bytes": 1257642
     },
     {
       "name": "pt-run-10-done.png",
       "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-run-10-done.png",
       "width": 1440,
       "height": 900,
-      "bytes": 546902
+      "bytes": 683299
     },
     {
       "name": "pt-run-11-start.png",
       "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-run-11-start.png",
       "width": 1440,
       "height": 900,
-      "bytes": 1364386
+      "bytes": 1365447
     },
     {
       "name": "pt-run-11-done.png",
       "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-run-11-done.png",
       "width": 1440,
       "height": 900,
-      "bytes": 927192
+      "bytes": 923124
     },
     {
       "name": "pt-run-12-start.png",
       "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-run-12-start.png",
       "width": 1440,
       "height": 900,
-      "bytes": 1274979
+      "bytes": 1275589
     },
     {
       "name": "pt-run-12-done.png",
       "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-run-12-done.png",
       "width": 1440,
       "height": 900,
-      "bytes": 875829
+      "bytes": 876397
     },
     {
       "name": "pt-run-13-start.png",
       "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-run-13-start.png",
       "width": 1440,
       "height": 900,
-      "bytes": 1310090
+      "bytes": 1309360
     },
     {
       "name": "pt-run-13-done.png",
       "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-run-13-done.png",
       "width": 1440,
       "height": 900,
-      "bytes": 858146
+      "bytes": 857911
     },
     {
       "name": "pt-run-14-start.png",
       "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-run-14-start.png",
       "width": 1440,
       "height": 900,
-      "bytes": 1313065
+      "bytes": 1312964
     },
     {
       "name": "pt-run-14-done.png",
       "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-run-14-done.png",
       "width": 1440,
       "height": 900,
-      "bytes": 992618
+      "bytes": 992172
     },
     {
       "name": "pt-run-15-start.png",
       "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-run-15-start.png",
       "width": 1440,
       "height": 900,
-      "bytes": 134026
+      "bytes": 133709
     },
     {
       "name": "pt-run-15-done.png",
       "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-run-15-done.png",
       "width": 1440,
       "height": 900,
-      "bytes": 793356
+      "bytes": 801741
     },
     {
       "name": "pt-run-16-start.png",
       "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-run-16-start.png",
       "width": 1440,
       "height": 900,
-      "bytes": 1311538
+      "bytes": 1312216
     },
     {
       "name": "pt-run-16-done.png",
       "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-run-16-done.png",
       "width": 1440,
       "height": 900,
-      "bytes": 913947
+      "bytes": 1015052
     },
     {
       "name": "pt-run-17-start.png",
       "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-run-17-start.png",
       "width": 1440,
       "height": 900,
-      "bytes": 1275258
+      "bytes": 1275589
     },
     {
       "name": "pt-run-17-done.png",
       "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-run-17-done.png",
       "width": 1440,
       "height": 900,
-      "bytes": 998635
+      "bytes": 1283114
     },
     {
       "name": "pt-run-18-start.png",
       "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-run-18-start.png",
       "width": 1440,
       "height": 900,
-      "bytes": 335771
+      "bytes": 335543
     },
     {
       "name": "pt-run-18-done.png",
       "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-run-18-done.png",
       "width": 1440,
       "height": 900,
-      "bytes": 1145884
+      "bytes": 1146453
     },
     {
       "name": "pt-run-19-start.png",
       "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-run-19-start.png",
       "width": 1440,
       "height": 900,
-      "bytes": 1122131
+      "bytes": 1120977
     },
     {
       "name": "pt-run-19-done.png",
       "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-run-19-done.png",
       "width": 1440,
       "height": 900,
-      "bytes": 842925
+      "bytes": 781164
     },
     {
       "name": "pt-run-20-start.png",
       "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-run-20-start.png",
       "width": 1440,
       "height": 900,
-      "bytes": 1338449
+      "bytes": 1337031
     },
     {
       "name": "pt-run-20-done.png",
       "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-run-20-done.png",
       "width": 1440,
       "height": 900,
-      "bytes": 1061853
+      "bytes": 1279219
     },
     {
       "name": "pt-ending.png",
       "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-ending.png",
       "width": 1440,
       "height": 900,
-      "bytes": 391410
+      "bytes": 388841
     },
     {
       "name": "pt-ending-restart.png",
       "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-ending-restart.png",
       "width": 1440,
       "height": 900,
-      "bytes": 1182357
+      "bytes": 1187423
     },
     {
       "name": "pt-restart-level1.png",
       "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-restart-level1.png",
       "width": 1440,
       "height": 900,
-      "bytes": 1274545
+      "bytes": 1273813
     }
   ],
   "notes": [],
@@ -1694,7 +1710,7 @@
         "registered": 20
       },
       "title": "新建文件夹",
-      "href": "http://127.0.0.1:8767/",
+      "href": "http://127.0.0.1:5861/",
       "readyState": "complete",
       "bodyChildren": 32
     },
@@ -1704,6 +1720,6 @@
   },
   "checksOk": true,
   "strictChecks": true,
-  "durationMs": 327058,
-  "finishedAt": "2026-10-21T06:02:32.985Z"
+  "durationMs": 319857,
+  "finishedAt": "2026-10-21T06:59:10.171Z"
 }

@@ -233,7 +233,8 @@ ctx.qa(name)                   // 标记 data-qa，便于测试
 
 - localStorage key：`nf.progress.v1`；字段 `{completed:[1..], current:1, muted:false, finished:false}`
 - `NF.Game` 启动：标题页（点击/回车开始）→ 从 current 继续。
-- 完成任务栏玻璃罐（`[data-t="jar"]`）里增加一个小文件夹；点击打开关卡地图窗口（`[data-t="level-map"]`）。
+- 完成任务栏玻璃罐（`[data-t="jar"]`）里增加一个小文件夹；点击打开关卡地图窗口（`[data-t="level-map"]`）的「进度」标签。
+- 点开始按钮（或 files 图标）打开地图的「选关」标签：`data-mode="free"`，20 关全部可点；两个标签按钮 `map-tab-progress` / `map-tab-free` 可随时切换。自由选关后正常更新存档（用于练习/跳关）。
 - 任务栏：开始按钮（[data-t="start"]，打开关卡地图）、提示灯泡（[data-t="hint"]，重播演示）、静音（[data-t="mute"]）、时钟。
 - 调试钩子（QA 用，必须实现）：
 

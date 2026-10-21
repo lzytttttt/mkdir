@@ -1,6 +1,6 @@
 {
   "name": "new-folder-game",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "private": true,
   "description": "《新建文件夹》——一个假装是操作系统的整蛊建文件夹游戏",
   "scripts": {

@@ -276,7 +276,7 @@
 
     var foot = document.createElement('div');
     foot.className = 'ts-footer';
-    foot.innerHTML = '<span>RIGHT CLICK TO LIVE</span><span>·</span><span>v2.0</span>';
+    foot.innerHTML = '<span>RIGHT CLICK TO LIVE</span><span>·</span><span>v0.4</span>';
     titleEl.appendChild(foot);
 
     titleEl.addEventListener('click', function () { beginGame(); });
@@ -425,45 +425,88 @@
   function toggleLevelMap(source) {
     if (startMenu) { closeLevelMap(); return; }
     NF.Audio.play('open');
+    var mode = source === 'jar' ? 'progress' : 'free';   // 开始菜单默认进入"选关模式"
     startMenu = document.createElement('div');
     startMenu.className = 'start-menu';
     startMenu.dataset.t = 'level-map';
     startMenu.dataset.keepMenu = '1';
+    startMenu.dataset.mode = mode;
+
     var head = document.createElement('div');
     head.className = 'start-menu-title';
-    head.appendChild(icons.el('jar'));
+    var headIco = icons.el('jar');
+    head.appendChild(headIco);
     var sub = document.createElement('span');
-    sub.textContent = '我的文件夹';
     head.appendChild(sub);
+
+    var tabs = document.createElement('div');
+    tabs.className = 'map-tabs';
+    var tabProgress = document.createElement('button');
+    tabProgress.type = 'button';
+    tabProgress.className = 'map-tab';
+    tabProgress.dataset.t = 'map-tab-progress';
+    tabProgress.title = '进度';
+    tabProgress.innerHTML = icons.svg('jar') + '<span>进度</span>';
+    var tabFree = document.createElement('button');
+    tabFree.type = 'button';
+    tabFree.className = 'map-tab';
+    tabFree.dataset.t = 'map-tab-free';
+    tabFree.title = '选关模式';
+    tabFree.innerHTML = icons.svg('unlock') + '<span>选关</span>';
+    tabs.appendChild(tabProgress);
+    tabs.appendChild(tabFree);
+    head.appendChild(tabs);
     startMenu.appendChild(head);
 
     var grid = document.createElement('div');
     grid.className = 'level-grid';
-    order.forEach(function (id) {
-      var def = levels[id];
-      var cell = document.createElement('div');
-      cell.className = 'level-cell';
-      cell.dataset.t = 'level-cell-' + id;
-      cell.dataset.level = String(id);
-      var done = Game.progress.completed.indexOf(id) >= 0;
-      var unlocked = done || id <= Game.progress.current || id === 1;
-      if (done) cell.classList.add('is-done');
-      if (!unlocked) cell.classList.add('is-locked');
-      if (id === Game.progress.current) cell.classList.add('is-current');
-      cell.innerHTML = icons.svg(def ? def.icon : 'folder');
-      var num = document.createElement('span');
-      num.className = 'lv-num';
-      num.textContent = String(id).padStart(2, '0');
-      cell.appendChild(num);
-      cell.addEventListener('click', function (e) {
-        e.stopPropagation();
-        if (!unlocked) { NF.Audio.play('deny'); NF.OS.pulse(cell, 'wiggle', 400); return; }
-        closeLevelMap();
-        Game.startLevel(id);
-      });
-      grid.appendChild(cell);
-    });
     startMenu.appendChild(grid);
+
+    function renderGrid() {
+      grid.innerHTML = '';
+      startMenu.dataset.mode = mode;
+      sub.textContent = mode === 'progress' ? '我的文件夹' : '选关模式';
+      headIco.innerHTML = icons.svg(mode === 'progress' ? 'jar' : 'unlock');
+      tabProgress.classList.toggle('is-active', mode === 'progress');
+      tabFree.classList.toggle('is-active', mode === 'free');
+      order.forEach(function (id) {
+        var def = levels[id];
+        var cell = document.createElement('div');
+        cell.className = 'level-cell';
+        cell.dataset.t = 'level-cell-' + id;
+        cell.dataset.level = String(id);
+        var done = Game.progress.completed.indexOf(id) >= 0;
+        var unlocked = mode === 'free' ? true : (done || id <= Game.progress.current || id === 1);
+        if (done) cell.classList.add('is-done');
+        if (!unlocked) cell.classList.add('is-locked');
+        if (id === Game.progress.current) cell.classList.add('is-current');
+        if (mode === 'free' && !done) cell.classList.add('is-unplayed');
+        cell.innerHTML = icons.svg(def ? def.icon : 'folder');
+        var num = document.createElement('span');
+        num.className = 'lv-num';
+        num.textContent = String(id).padStart(2, '0');
+        cell.appendChild(num);
+        cell.addEventListener('click', function (e) {
+          e.stopPropagation();
+          if (!unlocked) { NF.Audio.play('deny'); NF.OS.pulse(cell, 'wiggle', 400); return; }
+          NF.Audio.play('click');
+          closeLevelMap();
+          Game.startLevel(id);
+        });
+        grid.appendChild(cell);
+      });
+    }
+
+    function switchMode(next) {
+      if (mode === next) return;
+      mode = next;
+      NF.Audio.play('open', { volume: 0.35 });
+      renderGrid();
+    }
+    tabProgress.addEventListener('click', function (e) { e.stopPropagation(); switchMode('progress'); });
+    tabFree.addEventListener('click', function (e) { e.stopPropagation(); switchMode('free'); });
+
+    renderGrid();
     os.uiLayer.appendChild(startMenu);
 
     var closeMap = function (e) {

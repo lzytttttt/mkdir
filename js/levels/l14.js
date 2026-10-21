@@ -2,7 +2,7 @@
    流程：
    1. 正常右键 → 新建 → 文件夹（直接建出，不弹命名框）；
    2. 2 秒后蓝色 rival 光标从右下角冲进来，把文件夹抢走并在桌面乱窜（鼠标靠近会加速逃开）；
-   3. 点 rival 两下把它敲晕 2.2 秒，文件夹掉在桌上；
+   3. 点 rival 两下把它敲晕 3.4 秒，文件夹掉在桌上；
    4. 眩晕期间把文件夹拖进右下角安全区 → 过关。没送到 rival 会爬起来重新抢走，可无限重试。
 */
 (function () {
@@ -72,13 +72,13 @@
         ' rgba(91,124,250,.28) 58%,transparent 76%);animation:lv14-trail .62s ease-out forwards;}',
         '@keyframes lv14-trail{0%{opacity:.95;transform:scale(1);}100%{opacity:0;transform:scale(.2);}}',
         /* 安全区：右下角虚线文件夹轮廓 */
-        '.lv14-safe{position:absolute;right:26px;bottom:24px;width:140px;height:110px;border-radius:20px;',
+        '.lv14-safe{position:absolute;right:30px;bottom:24px;width:190px;height:150px;border-radius:22px;',
         ' border:2.5px dashed rgba(126,240,192,.82);z-index:26;pointer-events:none;display:flex;',
         ' align-items:center;justify-content:center;background:radial-gradient(circle at 50% 46%,',
         ' rgba(126,240,192,.17),transparent 72%);box-shadow:0 0 26px rgba(126,240,192,.16),',
         ' inset 0 0 24px rgba(126,240,192,.1);',
         ' animation:lv14-safe-in .42s cubic-bezier(.34,1.56,.64,1) both,lv14-safe-pulse 2.2s ease-in-out infinite;}',
-        '.lv14-safe .lv14-safe-ico{width:68px;height:68px;opacity:.42;filter:drop-shadow(0 0 12px rgba(126,240,192,.45));}',
+        '.lv14-safe .lv14-safe-ico{width:90px;height:90px;opacity:.46;filter:drop-shadow(0 0 14px rgba(126,240,192,.5));}',
         '@keyframes lv14-safe-in{from{opacity:0;transform:scale(.72) rotate(-8deg);}to{opacity:1;transform:scale(1) rotate(0);}}',
         '@keyframes lv14-safe-pulse{0%,100%{box-shadow:0 0 20px rgba(126,240,192,.14),inset 0 0 20px rgba(126,240,192,.08);}',
         ' 50%{box-shadow:0 0 36px rgba(126,240,192,.3),inset 0 0 30px rgba(126,240,192,.16);}}',
@@ -191,7 +191,6 @@
         rival.appendChild(stars);
 
         scene.appendChild(rival);
-        ctx.on(rival, 'pointerdown', onRivalDown);
       }
 
       function buildSafeZone() {
@@ -294,18 +293,18 @@
           var mx = lastMouse.x - pos.x;
           var my = lastMouse.y - pos.y;
           var md = Math.hypot(mx, my);
-          var speed = 200;
-          if (performance.now() < fleeBoostUntil) speed += 260;
-          if (md < 178) {
-            // 玩家靠近：加速逃开，永远保持一点距离
-            speed = Math.max(speed, 560);
+          var speed = 150;
+          if (performance.now() < fleeBoostUntil) speed += 140;
+          if (md < 120) {
+            // 玩家靠近：稍微加速逃开，但不会像以前那样瞬间弹射
+            speed = Math.max(speed, 360);
             var ang = Math.atan2(pos.y - lastMouse.y, pos.x - lastMouse.x) + OS.rand(-0.42, 0.42);
-            targetPt = clampPt(pos.x + Math.cos(ang) * 320, pos.y + Math.sin(ang) * 320);
+            targetPt = clampPt(pos.x + Math.cos(ang) * 250, pos.y + Math.sin(ang) * 250);
             targetAt = now;
           } else if (!targetAt || now - targetAt > targetTtl) {
             targetPt = clampPt(OS.rand(110, W - 110), OS.rand(120, H - 150));
             targetAt = now;
-            targetTtl = OS.rand(700, 1500);
+            targetTtl = OS.rand(900, 1800);
           }
           var dx = targetPt.x - pos.x;
           var dy = targetPt.y - pos.y;
@@ -332,16 +331,24 @@
         });
       });
 
-      /* ---------------- 点击 rival：敲晕 ---------------- */
-      function onRivalDown(e) {
+      /* ---------------- 点击 rival：敲晕（放宽：rival 周围 120px 都算命中） ---------------- */
+      function onRootDown(e) {
         if (e.button !== undefined && e.button !== 0) return;
-        if (completed || phase !== 3 || stunned || !carried) return;
+        if (completed || phase !== 3 || stunned || !carried || !rival) return;
+        var c = OS.center(rival);
+        if (Math.hypot(e.clientX - c.x, e.clientY - c.y) > 120) return;
         e.stopPropagation();
+        registerHit();
+      }
+      ctx.on(ctx.root, 'pointerdown', onRootDown);
+
+      function registerHit() {
+        if (completed || phase !== 3 || stunned || !carried) return;
         hits += 1;
         rival.dataset.hits = String(hits);
         if (hits >= 2) { startStun(); return; }
         // 第一下只把它吓一跳：尖叫 + 短时间加速逃跑
-        fleeBoostUntil = performance.now() + 850;
+        fleeBoostUntil = performance.now() + 520;
         NF.Audio.play('boing', { volume: 0.6 });
         NF.Audio.play('giggle', { volume: 0.3 });
         rivalIco.classList.remove('lv14-hit');
@@ -403,8 +410,8 @@
           var fc = OS.center(folder);
           NF.FX.dust(fc.x, fc.y);
           bindFolderDrag();
-          // 从"真的可以拖"开始算 2.2 秒的黄金时间
-          stunTimer = ctx.timer(2200, recoverRival);
+          // 从"真的可以拖"开始算 3.4 秒的黄金时间
+          stunTimer = ctx.timer(3400, recoverRival);
         });
       }
 
@@ -464,9 +471,11 @@
             if (completed || phase !== 4) return;
             var fc = OS.center(folder);
             var sr = OS.rect(safeZone);
-            var inside = fc.x > sr.left && fc.x < sr.right && fc.y > sr.top && fc.y < sr.bottom;
+            // 放宽判定：中心进入安全区外扩 40px / 重叠 18% / 离安全区中心 140px 内都算送达
+            var inside = fc.x > sr.left - 40 && fc.x < sr.right + 40 && fc.y > sr.top - 40 && fc.y < sr.bottom + 40;
             var ov = safeZone ? OS.overlapRatio(folder, safeZone) : 0;
-            if (inside || ov > 0.3) { deliver(); return; }
+            var centerDist = Math.hypot(fc.x - (sr.left + sr.width / 2), fc.y - (sr.top + sr.height / 2));
+            if (inside || ov > 0.18 || centerDist < 140) { deliver(); return; }
             // 没放进去：留在原地继续尝试
             var nx = (parseFloat(folder.style.left) || 0) + st.dx;
             var ny = (parseFloat(folder.style.top) || 0) + st.dy;

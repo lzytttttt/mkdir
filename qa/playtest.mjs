@@ -486,7 +486,8 @@ async function createFolderViaMenu(page) {
   await confirmDialog(page);
 }
 
-/** 等元素尺寸稳定（folder-pop 之类的入场动画会先从小尺寸放大，期间算出来的点击点会偏） */
+/** 等元素尺寸和位置都稳定（folder-pop / 掉落 transition / 弹跳之类的动画期间，
+ *  算出来的点击点会落在元素外面导致 pointerdown 打空）。 */
 async function waitElementSettled(page, selector, timeout = 3000, minSize = 20) {
   const deadline = Date.now() + timeout;
   let prev = null;
@@ -497,7 +498,15 @@ async function waitElementSettled(page, selector, timeout = 3000, minSize = 20) 
       const b = el.getBoundingClientRect();
       return { w: b.width, h: b.height, x: b.left, y: b.top };
     })()`);
-    if (rect && prev && Math.abs(rect.w - prev.w) < 1 && Math.abs(rect.h - prev.h) < 1 && rect.w >= minSize) {
+    if (
+      rect &&
+      prev &&
+      Math.abs(rect.w - prev.w) < 1 &&
+      Math.abs(rect.h - prev.h) < 1 &&
+      Math.abs(rect.x - prev.x) < 1 &&
+      Math.abs(rect.y - prev.y) < 1 &&
+      rect.w >= minSize
+    ) {
       return rect;
     }
     prev = rect;
@@ -920,25 +929,35 @@ const LEVEL_SOLVERS = {
   },
   14: async (page) => {
     // ACT3 L14 影子玩家（实现见 js/levels/l14.js）：
-    // 右键建文件夹（直接生成，无名字框）→ rival 抢走后点它两次（累计数据在 dataset.hits）
-    // → 眩晕 2.2s 黄金窗口内把 created-folder 拖进 safe-zone。
+    // 右键建文件夹（直接生成，无名字框）→ rival 抢走后点它两次（rival 周围 120px 内都算命中）
+    // → 3.4s 黄金窗口内把 created-folder 拖进 safe-zone（判定已放宽）。
+    const t00 = Date.now();
+    const dbg = process.env.QA_DEBUG_SOLVERS
+      ? (...args) => console.log('[L14]', ((Date.now() - t00) / 1000).toFixed(1) + 's', ...args)
+      : () => {};
+    dbg('start');
     await openDesktopMenu(page);
     await clickFirst(page, ['[data-t="menu-item-new"]'], 4000);
     await page.waitForSelector('.nf-submenu.open [data-t="menu-item-folder"]', 4000);
     await page.click('[data-t="menu-item-folder"]');
     await page.waitForSelector('[data-t="created-folder"]', 10000);
+    dbg('folder created');
     // 等 rival 抢到文件夹（phase 3 / carried=1）
     await page.waitFor(
       `(() => { const el = document.querySelector('[data-t="rival"]'); return !!el && el.dataset.carried === '1'; })()`,
       20000
     );
+    dbg('rival carried');
     const rivalInfo = () =>
       page.evaluate(`(() => {
         const el = document.querySelector('[data-t="rival"]');
         if (!el) return null;
         const r = el.getBoundingClientRect();
+        const scene = document.querySelector('[data-qa="l14"]');
         return {
           stunned: el.dataset.stunned === '1',
+          hits: el.dataset.hits,
+          phase: scene ? scene.dataset.phase : null,
           cx: r.left + r.width / 2,
           cy: r.top + r.height / 2,
         };
@@ -948,18 +967,21 @@ const LEVEL_SOLVERS = {
       if (!state || isLevelComplete(state, 14)) return;
       const info = await rivalInfo();
       if (!info) {
+        dbg('attempt', attempt, 'no rival');
         await sleep(120);
         continue;
       }
       if (!info.stunned) {
-        // rival 会逃离鼠标（速度最高 560px/s），必须用最小延迟点击才追得上
+        // rival 周围 120px 内点击都算命中（20 关版已放宽）；用最小延迟点击追移动目标
         await page.click({ x: info.cx, y: info.cy }, { moveDelay: 0, delay: 4 });
+        dbg('attempt', attempt, 'click', 'hits=' + info.hits, 'phase=' + info.phase);
         await sleep(70);
         continue;
       }
       // 已眩晕：等文件夹落地可拖（startStun 340ms 后绑定拖拽），再拖进安全区。
-      // 文件夹可能掉在 rival 下方被盖住（rival 的 pointerdown 会 stopPropagation），
-      // 所以用 elementFromPoint 找文件夹未被遮挡的命中点再起拖。
+      // 注意：掉落到 dropHome 的 transition 约 420ms、随后还有弹跳动画；动画期间算出的
+      // 拖拽起点会落在元素外导致 pointerdown 打空（多关连跑时曾被拖慢到 ~28s），
+      // 因此先等位置稳定，再找文件夹未被 rival 遮挡的命中点。
       try {
         await page.waitFor(
           `(() => {
@@ -968,19 +990,44 @@ const LEVEL_SOLVERS = {
           })()`,
           4000
         );
+        await waitElementSettled(page, '[data-t="created-folder"]', 3000, 20);
         const folderPoint = await findHitPoints(page, '[data-t="created-folder"]');
         const safe = await page.rect('[data-t="safe-zone"]');
+        dbg('drag start at', Math.round(folderPoint.x), Math.round(folderPoint.y), '→ safe', Math.round(safe.cx), Math.round(safe.cy));
         await page.drag(
           { x: folderPoint.x, y: folderPoint.y },
           { x: safe.cx, y: safe.cy },
           { steps: 8, delay: 6, pressDelay: 15, releaseDelay: 15 }
         );
-      } catch {
+        dbg('drag done');
+      } catch (err) {
+        dbg('drag failed:', err.message);
         /* 黄金窗口没赶上，会再次被抢，继续重试 */
       }
+      const postDrag = await page.evaluate(`(() => {
+        const f = document.querySelector('[data-t="created-folder"]');
+        const s = document.querySelector('[data-t="safe-zone"]');
+        const scene = document.querySelector('[data-qa="l14"]');
+        if (!f || !s) return { missing: true, phase: scene ? scene.dataset.phase : null };
+        const fr = f.getBoundingClientRect();
+        const sr = s.getBoundingClientRect();
+        const fc = { x: fr.left + fr.width / 2, y: fr.top + fr.height / 2 };
+        const sc = { x: sr.left + sr.width / 2, y: sr.top + sr.height / 2 };
+        return {
+          phase: scene ? scene.dataset.phase : null,
+          state: f.dataset.state,
+          transform: f.style.transform || '',
+          left: f.style.left,
+          top: f.style.top,
+          dist: Math.round(Math.hypot(fc.x - sc.x, fc.y - sc.y)),
+          inExpanded: fc.x > sr.left - 40 && fc.x < sr.right + 40 && fc.y > sr.top - 40 && fc.y < sr.bottom + 40,
+        };
+      })()`);
+      dbg('post-drag', JSON.stringify(postDrag));
       await page
         .waitFor(`(() => { const s = NF.debug && NF.debug.state(); return !!(s && (s.completed || []).includes(14)); })()`, 3000)
         .catch(() => {});
+      dbg('after drag, completed=', JSON.stringify((await gameState(page)).completed));
       if (isLevelComplete(await gameState(page), 14)) return;
       await sleep(200);
     }
@@ -1333,21 +1380,65 @@ async function checkMute(page) {
 async function checkLevelMap(page) {
   const item = { name: '关卡地图', ok: false, detail: '', screenshots: [] };
   try {
-    // 任务栏玻璃罐打开关卡地图
-    await page.click('[data-t="jar"]');
-    await page.waitForSelector('[data-t="level-map"]', 5000);
-    const cells = await page.evaluate(
-      `document.querySelectorAll('[data-t="level-map"] [data-t^="level-cell-"]').length`
-    );
-    assert(cells === MAX_LEVEL, `关卡地图格子数应为 ${MAX_LEVEL}，实际 ${cells}`);
-    item.screenshots.push((await shot(page, 'pt-level-map')).name);
-    // 再点一次玻璃罐关闭（toggle）
-    await page.click('[data-t="jar"]');
-    await page.waitFor(`!document.querySelector('[data-t="level-map"]')`, 3000);
-    // 开始按钮再开一次，点空白处关闭
+    const mapInfo = () =>
+      page.evaluate(`(() => {
+        const map = document.querySelector('[data-t="level-map"]');
+        if (!map) return null;
+        return {
+          mode: map.dataset.mode || null,
+          cells: map.querySelectorAll('[data-t^="level-cell-"]').length,
+          locked: map.querySelectorAll('.level-cell.is-locked').length,
+          tabs: {
+            progress: !!map.querySelector('[data-t="map-tab-progress"]'),
+            free: !!map.querySelector('[data-t="map-tab-free"]'),
+          },
+        };
+      })()`);
+    const waitMode = (mode) =>
+      page.waitFor(
+        `(() => { const m = document.querySelector('[data-t="level-map"]'); return !!m && m.dataset.mode === '${mode}'; })()`,
+        4000
+      );
+    // 1) 开始按钮 → 选关模式：全部解锁、无 .is-locked
     await page.click('[data-t="start"]');
     await page.waitForSelector('[data-t="level-map"]', 5000);
-    await page.click({ x: 900, y: 640 });
+    let info = await mapInfo();
+    assert(info && info.cells === MAX_LEVEL, `关卡地图格子数应为 ${MAX_LEVEL}，实际 ${info && info.cells}`);
+    assert(info.mode === 'free', `开始按钮打开应为 free 模式，实际 ${info.mode}`);
+    assert(info.locked === 0, `选关模式不应有锁定关卡，实际 ${info.locked} 个 .is-locked`);
+    assert(info.tabs.progress && info.tabs.free, '缺少 map-tab-progress / map-tab-free 标签');
+    item.screenshots.push((await shot(page, 'pt-level-map-free')).name);
+
+    // 2) 切到"进度"标签 → mode=progress，未解锁关卡带 .is-locked
+    await page.click('[data-t="map-tab-progress"]');
+    await waitMode('progress');
+    info = await mapInfo();
+    assert(info.mode === 'progress', `切进度标签后 mode 应为 progress，实际 ${info.mode}`);
+    assert(info.cells === MAX_LEVEL, `进度模式格子数应为 ${MAX_LEVEL}，实际 ${info.cells}`);
+    assert(info.locked > 0, `进度模式应存在锁定关卡（当前已完成部分关卡），实际 ${info.locked}`);
+    item.screenshots.push((await shot(page, 'pt-level-map-progress')).name);
+
+    // 3) 切回"选关"标签 → 20 关全部解锁
+    await page.click('[data-t="map-tab-free"]');
+    await waitMode('free');
+    info = await mapInfo();
+    assert(
+      info.mode === 'free' && info.locked === 0,
+      `切回选关后应无锁定（mode=${info.mode}, locked=${info.locked}）`
+    );
+
+    // 4) 再点开始按钮关闭
+    await page.click('[data-t="start"]');
+    await page.waitFor(`!document.querySelector('[data-t="level-map"]')`, 3000);
+
+    // 5) 玻璃罐打开 = 进度模式（锁定逻辑生效）
+    await page.click('[data-t="jar"]');
+    await page.waitForSelector('[data-t="level-map"]', 5000);
+    info = await mapInfo();
+    assert(info.mode === 'progress', `玻璃罐打开应为 progress 模式，实际 ${info.mode}`);
+    assert(info.locked > 0, `玻璃罐进度模式应存在锁定关卡，实际 ${info.locked}`);
+    item.screenshots.push((await shot(page, 'pt-level-map-jar')).name);
+    await page.click('[data-t="jar"]');
     await page.waitFor(`!document.querySelector('[data-t="level-map"]')`, 3000);
     item.ok = true;
   } catch (err) {
