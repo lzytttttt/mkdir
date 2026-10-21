@@ -1,0 +1,12 @@
+node_modules/
+_*.mjs
+_shots/
+_lead-*
+_lead-shots/
+dev/
+qa/shots/
+qa/server.out.log
+qa/server.err.log
+*.log
+.DS_Store
+Thumbs.db

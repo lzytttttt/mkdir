@@ -1,0 +1,1709 @@
+{
+  "startedAt": "2026-10-21T05:57:05.925Z",
+  "browser": "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe",
+  "url": "http://127.0.0.1:8767/",
+  "mode": "full",
+  "ok": true,
+  "phases": {
+    "independent": {
+      "name": "independent",
+      "ok": true,
+      "levels": [
+        {
+          "level": 1,
+          "phase": "independent",
+          "ok": true,
+          "durationMs": 3028,
+          "error": null,
+          "consoleErrors": [],
+          "screenshots": [
+            "pt-01-start.png",
+            "pt-01-done.png"
+          ]
+        },
+        {
+          "level": 2,
+          "phase": "independent",
+          "ok": true,
+          "durationMs": 2777,
+          "error": null,
+          "consoleErrors": [],
+          "screenshots": [
+            "pt-02-start.png",
+            "pt-02-done.png"
+          ]
+        },
+        {
+          "level": 3,
+          "phase": "independent",
+          "ok": true,
+          "durationMs": 2561,
+          "error": null,
+          "consoleErrors": [],
+          "screenshots": [
+            "pt-03-start.png",
+            "pt-03-done.png"
+          ]
+        },
+        {
+          "level": 4,
+          "phase": "independent",
+          "ok": true,
+          "durationMs": 3669,
+          "error": null,
+          "consoleErrors": [],
+          "screenshots": [
+            "pt-04-start.png",
+            "pt-04-done.png"
+          ]
+        },
+        {
+          "level": 5,
+          "phase": "independent",
+          "ok": true,
+          "durationMs": 6432,
+          "error": null,
+          "consoleErrors": [],
+          "screenshots": [
+            "pt-05-start.png",
+            "pt-05-done.png"
+          ]
+        },
+        {
+          "level": 6,
+          "phase": "independent",
+          "ok": true,
+          "durationMs": 14078,
+          "error": null,
+          "consoleErrors": [],
+          "screenshots": [
+            "pt-06-start.png",
+            "pt-06-done.png"
+          ]
+        },
+        {
+          "level": 7,
+          "phase": "independent",
+          "ok": true,
+          "durationMs": 4901,
+          "error": null,
+          "consoleErrors": [],
+          "screenshots": [
+            "pt-07-start.png",
+            "pt-07-done.png"
+          ]
+        },
+        {
+          "level": 8,
+          "phase": "independent",
+          "ok": true,
+          "durationMs": 11051,
+          "error": null,
+          "consoleErrors": [],
+          "screenshots": [
+            "pt-08-start.png",
+            "pt-08-done.png"
+          ]
+        },
+        {
+          "level": 9,
+          "phase": "independent",
+          "ok": true,
+          "durationMs": 10013,
+          "error": null,
+          "consoleErrors": [],
+          "screenshots": [
+            "pt-09-start.png",
+            "pt-09-done.png"
+          ]
+        },
+        {
+          "level": 10,
+          "phase": "independent",
+          "ok": true,
+          "durationMs": 9437,
+          "error": null,
+          "consoleErrors": [],
+          "screenshots": [
+            "pt-10-start.png",
+            "pt-10-done.png"
+          ]
+        },
+        {
+          "level": 11,
+          "phase": "independent",
+          "ok": true,
+          "durationMs": 6253,
+          "error": null,
+          "consoleErrors": [],
+          "screenshots": [
+            "pt-11-start.png",
+            "pt-11-done.png"
+          ]
+        },
+        {
+          "level": 12,
+          "phase": "independent",
+          "ok": true,
+          "durationMs": 6094,
+          "error": null,
+          "consoleErrors": [],
+          "screenshots": [
+            "pt-12-start.png",
+            "pt-12-done.png"
+          ]
+        },
+        {
+          "level": 13,
+          "phase": "independent",
+          "ok": true,
+          "durationMs": 5609,
+          "error": null,
+          "consoleErrors": [],
+          "screenshots": [
+            "pt-13-start.png",
+            "pt-13-done.png"
+          ]
+        },
+        {
+          "level": 14,
+          "phase": "independent",
+          "ok": true,
+          "durationMs": 18926,
+          "error": null,
+          "consoleErrors": [],
+          "screenshots": [
+            "pt-14-start.png",
+            "pt-14-done.png"
+          ]
+        },
+        {
+          "level": 15,
+          "phase": "independent",
+          "ok": true,
+          "durationMs": 3594,
+          "error": null,
+          "consoleErrors": [],
+          "screenshots": [
+            "pt-15-start.png",
+            "pt-15-done.png"
+          ]
+        },
+        {
+          "level": 16,
+          "phase": "independent",
+          "ok": true,
+          "durationMs": 9837,
+          "error": null,
+          "consoleErrors": [],
+          "screenshots": [
+            "pt-16-start.png",
+            "pt-16-done.png"
+          ]
+        },
+        {
+          "level": 17,
+          "phase": "independent",
+          "ok": true,
+          "durationMs": 12653,
+          "error": null,
+          "consoleErrors": [],
+          "screenshots": [
+            "pt-17-start.png",
+            "pt-17-done.png"
+          ]
+        },
+        {
+          "level": 18,
+          "phase": "independent",
+          "ok": true,
+          "durationMs": 6998,
+          "error": null,
+          "consoleErrors": [],
+          "screenshots": [
+            "pt-18-start.png",
+            "pt-18-done.png"
+          ]
+        },
+        {
+          "level": 19,
+          "phase": "independent",
+          "ok": true,
+          "durationMs": 7356,
+          "error": null,
+          "consoleErrors": [],
+          "screenshots": [
+            "pt-19-start.png",
+            "pt-19-done.png"
+          ]
+        },
+        {
+          "level": 20,
+          "phase": "independent",
+          "ok": true,
+          "durationMs": 13411,
+          "error": null,
+          "consoleErrors": [],
+          "screenshots": [
+            "pt-20-start.png",
+            "pt-20-done.png"
+          ]
+        }
+      ],
+      "durationMs": 159834
+    },
+    "continuous": {
+      "name": "continuous",
+      "ok": true,
+      "levels": [
+        {
+          "level": 1,
+          "phase": "continuous",
+          "ok": true,
+          "durationMs": 4066,
+          "error": null,
+          "consoleErrors": [],
+          "screenshots": [
+            "pt-run-01-hint.png",
+            "pt-run-01-start.png",
+            "pt-run-01-done.png"
+          ]
+        },
+        {
+          "level": 2,
+          "phase": "continuous",
+          "ok": true,
+          "durationMs": 3286,
+          "error": null,
+          "consoleErrors": [],
+          "screenshots": [
+            "pt-run-02-start.png",
+            "pt-run-02-done.png"
+          ]
+        },
+        {
+          "level": 3,
+          "phase": "continuous",
+          "ok": true,
+          "durationMs": 3306,
+          "error": null,
+          "consoleErrors": [],
+          "screenshots": [
+            "pt-run-03-start.png",
+            "pt-run-03-done.png"
+          ]
+        },
+        {
+          "level": 4,
+          "phase": "continuous",
+          "ok": true,
+          "durationMs": 8153,
+          "error": null,
+          "consoleErrors": [],
+          "screenshots": [
+            "pt-run-04-start.png",
+            "pt-run-04-done.png"
+          ]
+        },
+        {
+          "level": 5,
+          "phase": "continuous",
+          "ok": true,
+          "durationMs": 5987,
+          "error": null,
+          "consoleErrors": [],
+          "screenshots": [
+            "pt-run-05-start.png",
+            "pt-run-05-done.png"
+          ]
+        },
+        {
+          "level": 6,
+          "phase": "continuous",
+          "ok": true,
+          "durationMs": 13513,
+          "error": null,
+          "consoleErrors": [],
+          "screenshots": [
+            "pt-run-06-start.png",
+            "pt-run-06-done.png"
+          ]
+        },
+        {
+          "level": 7,
+          "phase": "continuous",
+          "ok": true,
+          "durationMs": 3686,
+          "error": null,
+          "consoleErrors": [],
+          "screenshots": [
+            "pt-run-07-start.png",
+            "pt-run-07-done.png"
+          ]
+        },
+        {
+          "level": 8,
+          "phase": "continuous",
+          "ok": true,
+          "durationMs": 11317,
+          "error": null,
+          "consoleErrors": [],
+          "screenshots": [
+            "pt-run-08-start.png",
+            "pt-run-08-done.png"
+          ]
+        },
+        {
+          "level": 9,
+          "phase": "continuous",
+          "ok": true,
+          "durationMs": 10121,
+          "error": null,
+          "consoleErrors": [],
+          "screenshots": [
+            "pt-run-09-start.png",
+            "pt-run-09-done.png"
+          ]
+        },
+        {
+          "level": 10,
+          "phase": "continuous",
+          "ok": true,
+          "durationMs": 13428,
+          "error": null,
+          "consoleErrors": [],
+          "screenshots": [
+            "pt-run-10-start.png",
+            "pt-run-10-done.png"
+          ]
+        },
+        {
+          "level": 11,
+          "phase": "continuous",
+          "ok": true,
+          "durationMs": 6218,
+          "error": null,
+          "consoleErrors": [],
+          "screenshots": [
+            "pt-run-11-start.png",
+            "pt-run-11-done.png"
+          ]
+        },
+        {
+          "level": 12,
+          "phase": "continuous",
+          "ok": true,
+          "durationMs": 5871,
+          "error": null,
+          "consoleErrors": [],
+          "screenshots": [
+            "pt-run-12-start.png",
+            "pt-run-12-done.png"
+          ]
+        },
+        {
+          "level": 13,
+          "phase": "continuous",
+          "ok": true,
+          "durationMs": 5358,
+          "error": null,
+          "consoleErrors": [],
+          "screenshots": [
+            "pt-run-13-start.png",
+            "pt-run-13-done.png"
+          ]
+        },
+        {
+          "level": 14,
+          "phase": "continuous",
+          "ok": true,
+          "durationMs": 9518,
+          "error": null,
+          "consoleErrors": [],
+          "screenshots": [
+            "pt-run-14-start.png",
+            "pt-run-14-done.png"
+          ]
+        },
+        {
+          "level": 15,
+          "phase": "continuous",
+          "ok": true,
+          "durationMs": 3207,
+          "error": null,
+          "consoleErrors": [],
+          "screenshots": [
+            "pt-run-15-start.png",
+            "pt-run-15-done.png"
+          ]
+        },
+        {
+          "level": 16,
+          "phase": "continuous",
+          "ok": true,
+          "durationMs": 10421,
+          "error": null,
+          "consoleErrors": [],
+          "screenshots": [
+            "pt-run-16-start.png",
+            "pt-run-16-done.png"
+          ]
+        },
+        {
+          "level": 17,
+          "phase": "continuous",
+          "ok": true,
+          "durationMs": 12641,
+          "error": null,
+          "consoleErrors": [],
+          "screenshots": [
+            "pt-run-17-start.png",
+            "pt-run-17-done.png"
+          ]
+        },
+        {
+          "level": 18,
+          "phase": "continuous",
+          "ok": true,
+          "durationMs": 7742,
+          "error": null,
+          "consoleErrors": [],
+          "screenshots": [
+            "pt-run-18-start.png",
+            "pt-run-18-done.png"
+          ]
+        },
+        {
+          "level": 19,
+          "phase": "continuous",
+          "ok": true,
+          "durationMs": 6912,
+          "error": null,
+          "consoleErrors": [],
+          "screenshots": [
+            "pt-run-19-start.png",
+            "pt-run-19-done.png"
+          ]
+        },
+        {
+          "level": 20,
+          "phase": "continuous",
+          "ok": true,
+          "durationMs": 14318,
+          "error": null,
+          "consoleErrors": [],
+          "screenshots": [
+            "pt-run-20-start.png",
+            "pt-run-20-done.png"
+          ]
+        }
+      ],
+      "durationMs": 164576,
+      "maxLevel": 20
+    }
+  },
+  "levels": [
+    {
+      "level": 1,
+      "phase": "independent",
+      "ok": true,
+      "durationMs": 3028,
+      "error": null,
+      "consoleErrors": [],
+      "screenshots": [
+        "pt-01-start.png",
+        "pt-01-done.png"
+      ]
+    },
+    {
+      "level": 2,
+      "phase": "independent",
+      "ok": true,
+      "durationMs": 2777,
+      "error": null,
+      "consoleErrors": [],
+      "screenshots": [
+        "pt-02-start.png",
+        "pt-02-done.png"
+      ]
+    },
+    {
+      "level": 3,
+      "phase": "independent",
+      "ok": true,
+      "durationMs": 2561,
+      "error": null,
+      "consoleErrors": [],
+      "screenshots": [
+        "pt-03-start.png",
+        "pt-03-done.png"
+      ]
+    },
+    {
+      "level": 4,
+      "phase": "independent",
+      "ok": true,
+      "durationMs": 3669,
+      "error": null,
+      "consoleErrors": [],
+      "screenshots": [
+        "pt-04-start.png",
+        "pt-04-done.png"
+      ]
+    },
+    {
+      "level": 5,
+      "phase": "independent",
+      "ok": true,
+      "durationMs": 6432,
+      "error": null,
+      "consoleErrors": [],
+      "screenshots": [
+        "pt-05-start.png",
+        "pt-05-done.png"
+      ]
+    },
+    {
+      "level": 6,
+      "phase": "independent",
+      "ok": true,
+      "durationMs": 14078,
+      "error": null,
+      "consoleErrors": [],
+      "screenshots": [
+        "pt-06-start.png",
+        "pt-06-done.png"
+      ]
+    },
+    {
+      "level": 7,
+      "phase": "independent",
+      "ok": true,
+      "durationMs": 4901,
+      "error": null,
+      "consoleErrors": [],
+      "screenshots": [
+        "pt-07-start.png",
+        "pt-07-done.png"
+      ]
+    },
+    {
+      "level": 8,
+      "phase": "independent",
+      "ok": true,
+      "durationMs": 11051,
+      "error": null,
+      "consoleErrors": [],
+      "screenshots": [
+        "pt-08-start.png",
+        "pt-08-done.png"
+      ]
+    },
+    {
+      "level": 9,
+      "phase": "independent",
+      "ok": true,
+      "durationMs": 10013,
+      "error": null,
+      "consoleErrors": [],
+      "screenshots": [
+        "pt-09-start.png",
+        "pt-09-done.png"
+      ]
+    },
+    {
+      "level": 10,
+      "phase": "independent",
+      "ok": true,
+      "durationMs": 9437,
+      "error": null,
+      "consoleErrors": [],
+      "screenshots": [
+        "pt-10-start.png",
+        "pt-10-done.png"
+      ]
+    },
+    {
+      "level": 11,
+      "phase": "independent",
+      "ok": true,
+      "durationMs": 6253,
+      "error": null,
+      "consoleErrors": [],
+      "screenshots": [
+        "pt-11-start.png",
+        "pt-11-done.png"
+      ]
+    },
+    {
+      "level": 12,
+      "phase": "independent",
+      "ok": true,
+      "durationMs": 6094,
+      "error": null,
+      "consoleErrors": [],
+      "screenshots": [
+        "pt-12-start.png",
+        "pt-12-done.png"
+      ]
+    },
+    {
+      "level": 13,
+      "phase": "independent",
+      "ok": true,
+      "durationMs": 5609,
+      "error": null,
+      "consoleErrors": [],
+      "screenshots": [
+        "pt-13-start.png",
+        "pt-13-done.png"
+      ]
+    },
+    {
+      "level": 14,
+      "phase": "independent",
+      "ok": true,
+      "durationMs": 18926,
+      "error": null,
+      "consoleErrors": [],
+      "screenshots": [
+        "pt-14-start.png",
+        "pt-14-done.png"
+      ]
+    },
+    {
+      "level": 15,
+      "phase": "independent",
+      "ok": true,
+      "durationMs": 3594,
+      "error": null,
+      "consoleErrors": [],
+      "screenshots": [
+        "pt-15-start.png",
+        "pt-15-done.png"
+      ]
+    },
+    {
+      "level": 16,
+      "phase": "independent",
+      "ok": true,
+      "durationMs": 9837,
+      "error": null,
+      "consoleErrors": [],
+      "screenshots": [
+        "pt-16-start.png",
+        "pt-16-done.png"
+      ]
+    },
+    {
+      "level": 17,
+      "phase": "independent",
+      "ok": true,
+      "durationMs": 12653,
+      "error": null,
+      "consoleErrors": [],
+      "screenshots": [
+        "pt-17-start.png",
+        "pt-17-done.png"
+      ]
+    },
+    {
+      "level": 18,
+      "phase": "independent",
+      "ok": true,
+      "durationMs": 6998,
+      "error": null,
+      "consoleErrors": [],
+      "screenshots": [
+        "pt-18-start.png",
+        "pt-18-done.png"
+      ]
+    },
+    {
+      "level": 19,
+      "phase": "independent",
+      "ok": true,
+      "durationMs": 7356,
+      "error": null,
+      "consoleErrors": [],
+      "screenshots": [
+        "pt-19-start.png",
+        "pt-19-done.png"
+      ]
+    },
+    {
+      "level": 20,
+      "phase": "independent",
+      "ok": true,
+      "durationMs": 13411,
+      "error": null,
+      "consoleErrors": [],
+      "screenshots": [
+        "pt-20-start.png",
+        "pt-20-done.png"
+      ]
+    },
+    {
+      "level": 1,
+      "phase": "continuous",
+      "ok": true,
+      "durationMs": 4066,
+      "error": null,
+      "consoleErrors": [],
+      "screenshots": [
+        "pt-run-01-hint.png",
+        "pt-run-01-start.png",
+        "pt-run-01-done.png"
+      ]
+    },
+    {
+      "level": 2,
+      "phase": "continuous",
+      "ok": true,
+      "durationMs": 3286,
+      "error": null,
+      "consoleErrors": [],
+      "screenshots": [
+        "pt-run-02-start.png",
+        "pt-run-02-done.png"
+      ]
+    },
+    {
+      "level": 3,
+      "phase": "continuous",
+      "ok": true,
+      "durationMs": 3306,
+      "error": null,
+      "consoleErrors": [],
+      "screenshots": [
+        "pt-run-03-start.png",
+        "pt-run-03-done.png"
+      ]
+    },
+    {
+      "level": 4,
+      "phase": "continuous",
+      "ok": true,
+      "durationMs": 8153,
+      "error": null,
+      "consoleErrors": [],
+      "screenshots": [
+        "pt-run-04-start.png",
+        "pt-run-04-done.png"
+      ]
+    },
+    {
+      "level": 5,
+      "phase": "continuous",
+      "ok": true,
+      "durationMs": 5987,
+      "error": null,
+      "consoleErrors": [],
+      "screenshots": [
+        "pt-run-05-start.png",
+        "pt-run-05-done.png"
+      ]
+    },
+    {
+      "level": 6,
+      "phase": "continuous",
+      "ok": true,
+      "durationMs": 13513,
+      "error": null,
+      "consoleErrors": [],
+      "screenshots": [
+        "pt-run-06-start.png",
+        "pt-run-06-done.png"
+      ]
+    },
+    {
+      "level": 7,
+      "phase": "continuous",
+      "ok": true,
+      "durationMs": 3686,
+      "error": null,
+      "consoleErrors": [],
+      "screenshots": [
+        "pt-run-07-start.png",
+        "pt-run-07-done.png"
+      ]
+    },
+    {
+      "level": 8,
+      "phase": "continuous",
+      "ok": true,
+      "durationMs": 11317,
+      "error": null,
+      "consoleErrors": [],
+      "screenshots": [
+        "pt-run-08-start.png",
+        "pt-run-08-done.png"
+      ]
+    },
+    {
+      "level": 9,
+      "phase": "continuous",
+      "ok": true,
+      "durationMs": 10121,
+      "error": null,
+      "consoleErrors": [],
+      "screenshots": [
+        "pt-run-09-start.png",
+        "pt-run-09-done.png"
+      ]
+    },
+    {
+      "level": 10,
+      "phase": "continuous",
+      "ok": true,
+      "durationMs": 13428,
+      "error": null,
+      "consoleErrors": [],
+      "screenshots": [
+        "pt-run-10-start.png",
+        "pt-run-10-done.png"
+      ]
+    },
+    {
+      "level": 11,
+      "phase": "continuous",
+      "ok": true,
+      "durationMs": 6218,
+      "error": null,
+      "consoleErrors": [],
+      "screenshots": [
+        "pt-run-11-start.png",
+        "pt-run-11-done.png"
+      ]
+    },
+    {
+      "level": 12,
+      "phase": "continuous",
+      "ok": true,
+      "durationMs": 5871,
+      "error": null,
+      "consoleErrors": [],
+      "screenshots": [
+        "pt-run-12-start.png",
+        "pt-run-12-done.png"
+      ]
+    },
+    {
+      "level": 13,
+      "phase": "continuous",
+      "ok": true,
+      "durationMs": 5358,
+      "error": null,
+      "consoleErrors": [],
+      "screenshots": [
+        "pt-run-13-start.png",
+        "pt-run-13-done.png"
+      ]
+    },
+    {
+      "level": 14,
+      "phase": "continuous",
+      "ok": true,
+      "durationMs": 9518,
+      "error": null,
+      "consoleErrors": [],
+      "screenshots": [
+        "pt-run-14-start.png",
+        "pt-run-14-done.png"
+      ]
+    },
+    {
+      "level": 15,
+      "phase": "continuous",
+      "ok": true,
+      "durationMs": 3207,
+      "error": null,
+      "consoleErrors": [],
+      "screenshots": [
+        "pt-run-15-start.png",
+        "pt-run-15-done.png"
+      ]
+    },
+    {
+      "level": 16,
+      "phase": "continuous",
+      "ok": true,
+      "durationMs": 10421,
+      "error": null,
+      "consoleErrors": [],
+      "screenshots": [
+        "pt-run-16-start.png",
+        "pt-run-16-done.png"
+      ]
+    },
+    {
+      "level": 17,
+      "phase": "continuous",
+      "ok": true,
+      "durationMs": 12641,
+      "error": null,
+      "consoleErrors": [],
+      "screenshots": [
+        "pt-run-17-start.png",
+        "pt-run-17-done.png"
+      ]
+    },
+    {
+      "level": 18,
+      "phase": "continuous",
+      "ok": true,
+      "durationMs": 7742,
+      "error": null,
+      "consoleErrors": [],
+      "screenshots": [
+        "pt-run-18-start.png",
+        "pt-run-18-done.png"
+      ]
+    },
+    {
+      "level": 19,
+      "phase": "continuous",
+      "ok": true,
+      "durationMs": 6912,
+      "error": null,
+      "consoleErrors": [],
+      "screenshots": [
+        "pt-run-19-start.png",
+        "pt-run-19-done.png"
+      ]
+    },
+    {
+      "level": 20,
+      "phase": "continuous",
+      "ok": true,
+      "durationMs": 14318,
+      "error": null,
+      "consoleErrors": [],
+      "screenshots": [
+        "pt-run-20-start.png",
+        "pt-run-20-done.png"
+      ]
+    }
+  ],
+  "checks": [
+    {
+      "name": "旧 10 关存档迁移",
+      "ok": true,
+      "detail": "",
+      "screenshots": []
+    },
+    {
+      "name": "标题开始（独立阶段）",
+      "ok": true,
+      "detail": "",
+      "screenshots": [
+        "pt-title-independent.png"
+      ]
+    },
+    {
+      "name": "标题开始（连续通关）",
+      "ok": true,
+      "detail": "",
+      "screenshots": [
+        "pt-title-run.png"
+      ]
+    },
+    {
+      "name": "提示重播",
+      "ok": true,
+      "detail": "Ghost.isPlaying()",
+      "screenshots": []
+    },
+    {
+      "name": "静音按钮",
+      "ok": true,
+      "detail": "",
+      "screenshots": []
+    },
+    {
+      "name": "关卡地图",
+      "ok": true,
+      "detail": "",
+      "screenshots": [
+        "pt-level-map.png"
+      ]
+    },
+    {
+      "name": "结局与再玩一次",
+      "ok": true,
+      "detail": "",
+      "screenshots": [
+        "pt-ending.png",
+        "pt-ending-restart.png",
+        "pt-restart-level1.png"
+      ]
+    }
+  ],
+  "consoleErrors": [],
+  "failedRequests": [],
+  "screenshots": [
+    {
+      "name": "pt-title-independent.png",
+      "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-title-independent.png",
+      "width": 1440,
+      "height": 900,
+      "bytes": 1174479
+    },
+    {
+      "name": "pt-01-start.png",
+      "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-01-start.png",
+      "width": 1440,
+      "height": 900,
+      "bytes": 1274007
+    },
+    {
+      "name": "pt-01-done.png",
+      "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-01-done.png",
+      "width": 1440,
+      "height": 900,
+      "bytes": 273569
+    },
+    {
+      "name": "pt-02-start.png",
+      "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-02-start.png",
+      "width": 1440,
+      "height": 900,
+      "bytes": 1277797
+    },
+    {
+      "name": "pt-02-done.png",
+      "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-02-done.png",
+      "width": 1440,
+      "height": 900,
+      "bytes": 877350
+    },
+    {
+      "name": "pt-03-start.png",
+      "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-03-start.png",
+      "width": 1440,
+      "height": 900,
+      "bytes": 1275382
+    },
+    {
+      "name": "pt-03-done.png",
+      "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-03-done.png",
+      "width": 1440,
+      "height": 900,
+      "bytes": 879988
+    },
+    {
+      "name": "pt-04-start.png",
+      "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-04-start.png",
+      "width": 1440,
+      "height": 900,
+      "bytes": 1276197
+    },
+    {
+      "name": "pt-04-done.png",
+      "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-04-done.png",
+      "width": 1440,
+      "height": 900,
+      "bytes": 792308
+    },
+    {
+      "name": "pt-05-start.png",
+      "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-05-start.png",
+      "width": 1440,
+      "height": 900,
+      "bytes": 1287323
+    },
+    {
+      "name": "pt-05-done.png",
+      "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-05-done.png",
+      "width": 1440,
+      "height": 900,
+      "bytes": 919649
+    },
+    {
+      "name": "pt-06-start.png",
+      "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-06-start.png",
+      "width": 1440,
+      "height": 900,
+      "bytes": 1277285
+    },
+    {
+      "name": "pt-06-done.png",
+      "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-06-done.png",
+      "width": 1440,
+      "height": 900,
+      "bytes": 1257635
+    },
+    {
+      "name": "pt-07-start.png",
+      "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-07-start.png",
+      "width": 1440,
+      "height": 900,
+      "bytes": 1275229
+    },
+    {
+      "name": "pt-07-done.png",
+      "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-07-done.png",
+      "width": 1440,
+      "height": 900,
+      "bytes": 709122
+    },
+    {
+      "name": "pt-08-start.png",
+      "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-08-start.png",
+      "width": 1440,
+      "height": 900,
+      "bytes": 1079000
+    },
+    {
+      "name": "pt-08-done.png",
+      "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-08-done.png",
+      "width": 1440,
+      "height": 900,
+      "bytes": 710680
+    },
+    {
+      "name": "pt-09-start.png",
+      "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-09-start.png",
+      "width": 1440,
+      "height": 900,
+      "bytes": 1288783
+    },
+    {
+      "name": "pt-09-done.png",
+      "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-09-done.png",
+      "width": 1440,
+      "height": 900,
+      "bytes": 1276654
+    },
+    {
+      "name": "pt-10-start.png",
+      "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-10-start.png",
+      "width": 1440,
+      "height": 900,
+      "bytes": 1278274
+    },
+    {
+      "name": "pt-10-done.png",
+      "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-10-done.png",
+      "width": 1440,
+      "height": 900,
+      "bytes": 543314
+    },
+    {
+      "name": "pt-11-start.png",
+      "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-11-start.png",
+      "width": 1440,
+      "height": 900,
+      "bytes": 1310575
+    },
+    {
+      "name": "pt-11-done.png",
+      "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-11-done.png",
+      "width": 1440,
+      "height": 900,
+      "bytes": 981217
+    },
+    {
+      "name": "pt-12-start.png",
+      "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-12-start.png",
+      "width": 1440,
+      "height": 900,
+      "bytes": 1241937
+    },
+    {
+      "name": "pt-12-done.png",
+      "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-12-done.png",
+      "width": 1440,
+      "height": 900,
+      "bytes": 803712
+    },
+    {
+      "name": "pt-13-start.png",
+      "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-13-start.png",
+      "width": 1440,
+      "height": 900,
+      "bytes": 1269660
+    },
+    {
+      "name": "pt-13-done.png",
+      "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-13-done.png",
+      "width": 1440,
+      "height": 900,
+      "bytes": 779637
+    },
+    {
+      "name": "pt-14-start.png",
+      "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-14-start.png",
+      "width": 1440,
+      "height": 900,
+      "bytes": 1275627
+    },
+    {
+      "name": "pt-14-done.png",
+      "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-14-done.png",
+      "width": 1440,
+      "height": 900,
+      "bytes": 888826
+    },
+    {
+      "name": "pt-15-start.png",
+      "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-15-start.png",
+      "width": 1440,
+      "height": 900,
+      "bytes": 122429
+    },
+    {
+      "name": "pt-15-done.png",
+      "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-15-done.png",
+      "width": 1440,
+      "height": 900,
+      "bytes": 847958
+    },
+    {
+      "name": "pt-16-start.png",
+      "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-16-start.png",
+      "width": 1440,
+      "height": 900,
+      "bytes": 1278235
+    },
+    {
+      "name": "pt-16-done.png",
+      "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-16-done.png",
+      "width": 1440,
+      "height": 900,
+      "bytes": 839203
+    },
+    {
+      "name": "pt-17-start.png",
+      "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-17-start.png",
+      "width": 1440,
+      "height": 900,
+      "bytes": 1253577
+    },
+    {
+      "name": "pt-17-done.png",
+      "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-17-done.png",
+      "width": 1440,
+      "height": 900,
+      "bytes": 1263083
+    },
+    {
+      "name": "pt-18-start.png",
+      "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-18-start.png",
+      "width": 1440,
+      "height": 900,
+      "bytes": 330887
+    },
+    {
+      "name": "pt-18-done.png",
+      "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-18-done.png",
+      "width": 1440,
+      "height": 900,
+      "bytes": 1117937
+    },
+    {
+      "name": "pt-19-start.png",
+      "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-19-start.png",
+      "width": 1440,
+      "height": 900,
+      "bytes": 1091227
+    },
+    {
+      "name": "pt-19-done.png",
+      "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-19-done.png",
+      "width": 1440,
+      "height": 900,
+      "bytes": 815612
+    },
+    {
+      "name": "pt-20-start.png",
+      "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-20-start.png",
+      "width": 1440,
+      "height": 900,
+      "bytes": 1297637
+    },
+    {
+      "name": "pt-20-done.png",
+      "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-20-done.png",
+      "width": 1440,
+      "height": 900,
+      "bytes": 1080771
+    },
+    {
+      "name": "pt-title-run.png",
+      "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-title-run.png",
+      "width": 1440,
+      "height": 900,
+      "bytes": 1172302
+    },
+    {
+      "name": "pt-run-01-hint.png",
+      "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-run-01-hint.png",
+      "width": 1440,
+      "height": 900,
+      "bytes": 1272345
+    },
+    {
+      "name": "pt-run-01-start.png",
+      "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-run-01-start.png",
+      "width": 1440,
+      "height": 900,
+      "bytes": 1256554
+    },
+    {
+      "name": "pt-run-01-done.png",
+      "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-run-01-done.png",
+      "width": 1440,
+      "height": 900,
+      "bytes": 876952
+    },
+    {
+      "name": "pt-run-02-start.png",
+      "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-run-02-start.png",
+      "width": 1440,
+      "height": 900,
+      "bytes": 1276961
+    },
+    {
+      "name": "pt-run-02-done.png",
+      "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-run-02-done.png",
+      "width": 1440,
+      "height": 900,
+      "bytes": 882712
+    },
+    {
+      "name": "pt-level-map.png",
+      "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-level-map.png",
+      "width": 1440,
+      "height": 900,
+      "bytes": 1230334
+    },
+    {
+      "name": "pt-run-03-start.png",
+      "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-run-03-start.png",
+      "width": 1440,
+      "height": 900,
+      "bytes": 1255070
+    },
+    {
+      "name": "pt-run-03-done.png",
+      "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-run-03-done.png",
+      "width": 1440,
+      "height": 900,
+      "bytes": 885917
+    },
+    {
+      "name": "pt-run-04-start.png",
+      "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-run-04-start.png",
+      "width": 1440,
+      "height": 900,
+      "bytes": 1279659
+    },
+    {
+      "name": "pt-run-04-done.png",
+      "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-run-04-done.png",
+      "width": 1440,
+      "height": 900,
+      "bytes": 788718
+    },
+    {
+      "name": "pt-run-05-start.png",
+      "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-run-05-start.png",
+      "width": 1440,
+      "height": 900,
+      "bytes": 1289570
+    },
+    {
+      "name": "pt-run-05-done.png",
+      "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-run-05-done.png",
+      "width": 1440,
+      "height": 900,
+      "bytes": 1282677
+    },
+    {
+      "name": "pt-run-06-start.png",
+      "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-run-06-start.png",
+      "width": 1440,
+      "height": 900,
+      "bytes": 1274901
+    },
+    {
+      "name": "pt-run-06-done.png",
+      "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-run-06-done.png",
+      "width": 1440,
+      "height": 900,
+      "bytes": 1260524
+    },
+    {
+      "name": "pt-run-07-start.png",
+      "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-run-07-start.png",
+      "width": 1440,
+      "height": 900,
+      "bytes": 1278221
+    },
+    {
+      "name": "pt-run-07-done.png",
+      "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-run-07-done.png",
+      "width": 1440,
+      "height": 900,
+      "bytes": 776460
+    },
+    {
+      "name": "pt-run-08-start.png",
+      "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-run-08-start.png",
+      "width": 1440,
+      "height": 900,
+      "bytes": 1078478
+    },
+    {
+      "name": "pt-run-08-done.png",
+      "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-run-08-done.png",
+      "width": 1440,
+      "height": 900,
+      "bytes": 763662
+    },
+    {
+      "name": "pt-run-09-start.png",
+      "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-run-09-start.png",
+      "width": 1440,
+      "height": 900,
+      "bytes": 1288120
+    },
+    {
+      "name": "pt-run-09-done.png",
+      "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-run-09-done.png",
+      "width": 1440,
+      "height": 900,
+      "bytes": 1278543
+    },
+    {
+      "name": "pt-run-10-start.png",
+      "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-run-10-start.png",
+      "width": 1440,
+      "height": 900,
+      "bytes": 1260217
+    },
+    {
+      "name": "pt-run-10-done.png",
+      "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-run-10-done.png",
+      "width": 1440,
+      "height": 900,
+      "bytes": 546902
+    },
+    {
+      "name": "pt-run-11-start.png",
+      "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-run-11-start.png",
+      "width": 1440,
+      "height": 900,
+      "bytes": 1364386
+    },
+    {
+      "name": "pt-run-11-done.png",
+      "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-run-11-done.png",
+      "width": 1440,
+      "height": 900,
+      "bytes": 927192
+    },
+    {
+      "name": "pt-run-12-start.png",
+      "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-run-12-start.png",
+      "width": 1440,
+      "height": 900,
+      "bytes": 1274979
+    },
+    {
+      "name": "pt-run-12-done.png",
+      "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-run-12-done.png",
+      "width": 1440,
+      "height": 900,
+      "bytes": 875829
+    },
+    {
+      "name": "pt-run-13-start.png",
+      "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-run-13-start.png",
+      "width": 1440,
+      "height": 900,
+      "bytes": 1310090
+    },
+    {
+      "name": "pt-run-13-done.png",
+      "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-run-13-done.png",
+      "width": 1440,
+      "height": 900,
+      "bytes": 858146
+    },
+    {
+      "name": "pt-run-14-start.png",
+      "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-run-14-start.png",
+      "width": 1440,
+      "height": 900,
+      "bytes": 1313065
+    },
+    {
+      "name": "pt-run-14-done.png",
+      "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-run-14-done.png",
+      "width": 1440,
+      "height": 900,
+      "bytes": 992618
+    },
+    {
+      "name": "pt-run-15-start.png",
+      "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-run-15-start.png",
+      "width": 1440,
+      "height": 900,
+      "bytes": 134026
+    },
+    {
+      "name": "pt-run-15-done.png",
+      "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-run-15-done.png",
+      "width": 1440,
+      "height": 900,
+      "bytes": 793356
+    },
+    {
+      "name": "pt-run-16-start.png",
+      "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-run-16-start.png",
+      "width": 1440,
+      "height": 900,
+      "bytes": 1311538
+    },
+    {
+      "name": "pt-run-16-done.png",
+      "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-run-16-done.png",
+      "width": 1440,
+      "height": 900,
+      "bytes": 913947
+    },
+    {
+      "name": "pt-run-17-start.png",
+      "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-run-17-start.png",
+      "width": 1440,
+      "height": 900,
+      "bytes": 1275258
+    },
+    {
+      "name": "pt-run-17-done.png",
+      "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-run-17-done.png",
+      "width": 1440,
+      "height": 900,
+      "bytes": 998635
+    },
+    {
+      "name": "pt-run-18-start.png",
+      "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-run-18-start.png",
+      "width": 1440,
+      "height": 900,
+      "bytes": 335771
+    },
+    {
+      "name": "pt-run-18-done.png",
+      "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-run-18-done.png",
+      "width": 1440,
+      "height": 900,
+      "bytes": 1145884
+    },
+    {
+      "name": "pt-run-19-start.png",
+      "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-run-19-start.png",
+      "width": 1440,
+      "height": 900,
+      "bytes": 1122131
+    },
+    {
+      "name": "pt-run-19-done.png",
+      "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-run-19-done.png",
+      "width": 1440,
+      "height": 900,
+      "bytes": 842925
+    },
+    {
+      "name": "pt-run-20-start.png",
+      "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-run-20-start.png",
+      "width": 1440,
+      "height": 900,
+      "bytes": 1338449
+    },
+    {
+      "name": "pt-run-20-done.png",
+      "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-run-20-done.png",
+      "width": 1440,
+      "height": 900,
+      "bytes": 1061853
+    },
+    {
+      "name": "pt-ending.png",
+      "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-ending.png",
+      "width": 1440,
+      "height": 900,
+      "bytes": 391410
+    },
+    {
+      "name": "pt-ending-restart.png",
+      "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-ending-restart.png",
+      "width": 1440,
+      "height": 900,
+      "bytes": 1182357
+    },
+    {
+      "name": "pt-restart-level1.png",
+      "path": "C:\\Users\\Administrator\\test\\新建文件夹\\qa\\shots\\pt-restart-level1.png",
+      "width": 1440,
+      "height": 900,
+      "bytes": 1274545
+    }
+  ],
+  "notes": [],
+  "maxLevel": 20,
+  "levelsRequested": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "continuousMaxLevel": 20,
+  "preflight": {
+    "info": {
+      "hasNF": true,
+      "present": {
+        "icons": true,
+        "Audio": true,
+        "FX": true,
+        "Ghost": true,
+        "OS": true,
+        "Game": true,
+        "debug": true
+      },
+      "game": {
+        "maxLevel": 20,
+        "registered": 20
+      },
+      "title": "新建文件夹",
+      "href": "http://127.0.0.1:8767/",
+      "readyState": "complete",
+      "bodyChildren": 32
+    },
+    "missing": [],
+    "consoleErrors": [],
+    "failedRequests": []
+  },
+  "checksOk": true,
+  "strictChecks": true,
+  "durationMs": 327058,
+  "finishedAt": "2026-10-21T06:02:32.985Z"
+}

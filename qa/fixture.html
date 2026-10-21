@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>QA Fixture · 新建文件夹</title>
+<link rel="icon" href="data:,">
+<style>
+  :root {
+    --bg: #171233;
+    --panel: #232052;
+    --line: #5b7cfa66;
+    --accent: #5b7cfa;
+    --folder: #ffc94d;
+    --ink: #eef1ff;
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background:
+      radial-gradient(1200px 600px at 20% -10%, #2a1e5c 0%, transparent 60%),
+      radial-gradient(900px 500px at 100% 110%, #101a38 0%, transparent 60%),
+      var(--bg);
+    color: var(--ink);
+    font-family: 'Microsoft YaHei', 'PingFang SC', system-ui, -apple-system, sans-serif;
+    user-select: none;
+  }
+  #stage { position: relative; width: 100%; height: 100%; }
+  h1 {
+    position: absolute; left: 40px; top: 18px; margin: 0;
+    font-size: 22px; font-weight: 900; letter-spacing: 1px;
+    color: #cfd8ff;
+  }
+  .hint { position: absolute; left: 40px; top: 52px; font-size: 13px; color: #8d95c9; }
+
+  button {
+    font: inherit;
+    border: 1px solid var(--line);
+    background: var(--panel);
+    color: var(--ink);
+    border-radius: 9px;
+    padding: 10px 18px;
+    cursor: pointer;
+    transition: background 120ms, transform 90ms;
+  }
+  button:hover { background: #302d6e; }
+  button:active { transform: scale(0.96); }
+
+  #btn-click { position: absolute; left: 40px; top: 96px; }
+  #btn-dbl { position: absolute; left: 172px; top: 96px; }
+
+  #text-input {
+    position: absolute; left: 320px; top: 96px; width: 240px;
+    font: inherit; color: var(--ink);
+    background: #1a1740; border: 1px solid var(--line);
+    border-radius: 9px; padding: 10px 12px; outline: none;
+  }
+  #text-input:focus { border-color: var(--accent); box-shadow: 0 0 0 3px #5b7cfa33; }
+
+  #canvas-wrap { position: absolute; left: 40px; top: 170px; }
+  #cv { display: block; border-radius: 10px; border: 1px solid var(--line); cursor: crosshair; }
+
+  #ctx-area {
+    position: absolute; left: 260px; top: 170px; width: 200px; height: 100px;
+    border: 2px dashed #7d8bff88; border-radius: 12px;
+    display: flex; align-items: center; justify-content: center;
+    color: #aab3e8; font-size: 14px;
+  }
+
+  #drag-src {
+    position: absolute; left: 80px; top: 340px; width: 110px; height: 74px;
+    border-radius: 10px;
+    background: linear-gradient(180deg, #ffdc8a, var(--folder));
+    color: #4a3200; font-weight: 700; font-size: 14px;
+    display: flex; align-items: center; justify-content: center;
+    cursor: grab; touch-action: none;
+    box-shadow: 0 10px 24px #00000055;
+  }
+  #drag-src.dragging { cursor: grabbing; filter: brightness(1.08); }
+
+  #drop-zone {
+    position: absolute; left: 420px; top: 320px; width: 240px; height: 130px;
+    border: 2px dashed #7d8bff; border-radius: 14px;
+    display: flex; align-items: center; justify-content: center;
+    color: #aab3e8; font-size: 14px;
+  }
+  #drop-zone.hot { border-color: var(--folder); background: #ffc94d14; }
+
+  #ctx-menu {
+    position: absolute; display: none; min-width: 170px; padding: 6px;
+    background: #ffffff; color: #1d1b33; border-radius: 10px;
+    box-shadow: 0 18px 44px #00000066; z-index: 50;
+  }
+  #ctx-menu button {
+    display: block; width: 100%; text-align: left; margin: 2px 0;
+    background: transparent; color: #1d1b33; border: 0; padding: 9px 12px;
+  }
+  #ctx-menu button:hover { background: #eef2ff; }
+
+  #log {
+    position: absolute; left: 40px; bottom: 16px; margin: 0;
+    font: 12px/1.5 Consolas, 'Cascadia Mono', monospace;
+    color: #7ef0c0; max-width: 60%; white-space: pre-wrap;
+  }
+  #readout {
+    position: absolute; right: 40px; top: 96px; text-align: right;
+    font-size: 13px; color: #9aa4d8; line-height: 1.8;
+  }
+  .badge {
+    display: inline-block; padding: 2px 8px; border-radius: 99px;
+    background: #5b7cfa22; border: 1px solid var(--line); margin-left: 6px;
+  }
+</style>
+</head>
+<body>
+<div id="stage">
+  <h1>QA Fixture</h1>
+  <div class="hint">用于验证 click / rightClick / dblclick / drag / key / typeText / screenshot</div>
+
+  <button id="btn-click" data-t="btn" type="button">点我 +1</button>
+  <button id="btn-dbl" data-t="dbl" type="button">双击我</button>
+  <input id="text-input" data-t="text-input" type="text" placeholder="键盘输入区" autocomplete="off" spellcheck="false">
+
+  <div id="readout">
+    clicks: <span id="ro-clicks" data-t="ro-clicks">0</span><span class="badge">click</span><br>
+    dbl: <span id="ro-dbl" data-t="ro-dbl">0</span><span class="badge">dblclick</span><br>
+    right: <span id="ro-right" data-t="ro-right">0</span><span class="badge">contextmenu</span>
+  </div>
+
+  <div id="canvas-wrap"><canvas id="cv" data-t="canvas" width="180" height="100"></canvas></div>
+  <div id="ctx-area" data-t="ctx-area">右键区域</div>
+
+  <div id="drag-src" data-t="drag-src">拖动我</div>
+  <div id="drop-zone" data-t="drop-zone">放这里</div>
+
+  <div id="ctx-menu" aria-hidden="true">
+    <button type="button" data-t="ctx-a">新建文件夹</button>
+    <button type="button" data-t="ctx-b">属性</button>
+  </div>
+
+  <pre id="log" data-t="log">booting…</pre>
+</div>
+<script>
+(function () {
+  'use strict';
+
+  var F = window.__fixture = {
+    ready: false,
+    clicks: 0,
+    dblCount: 0,
+    rightClicks: 0,
+    ctxClicked: null,
+    ctxMenuVisible: false,
+    canvasClick: null,
+    dropped: false,
+    dragMoves: 0,
+    dragStart: null,
+    dragEnd: null,
+    keys: [],
+    keyUps: 0,
+    lastKey: null,
+    combo: null,
+    enterCount: 0,
+    arrowDownCount: 0,
+    inputEvents: 0,
+    inputValue: '',
+    innerAtReady: null
+  };
+
+  var $ = function (sel) { return document.querySelector(sel); };
+  var logEl = $('#log');
+  var lines = [];
+  function log(msg) {
+    lines.push(msg);
+    if (lines.length > 8) lines.shift();
+    logEl.textContent = lines.join('\n');
+  }
+
+  /* ---------------- 单击 ---------------- */
+  var btn = $('[data-t="btn"]');
+  btn.addEventListener('click', function (e) {
+    F.clicks += 1;
+    F.lastClick = { button: e.button, detail: e.detail };
+    $('#ro-clicks').textContent = String(F.clicks);
+    log('click #' + F.clicks);
+  });
+
+  /* ---------------- 双击 ---------------- */
+  var dbl = $('[data-t="dbl"]');
+  dbl.addEventListener('dblclick', function () {
+    F.dblCount += 1;
+    $('#ro-dbl').textContent = String(F.dblCount);
+    log('dblclick #' + F.dblCount);
+  });
+
+  /* ---------------- 右键菜单 ---------------- */
+  var ctxArea = $('[data-t="ctx-area"]');
+  var menu = $('#ctx-menu');
+  function showMenu(x, y) {
+    menu.style.display = 'block';
+    menu.style.left = x + 'px';
+    menu.style.top = y + 'px';
+    F.ctxMenuVisible = true;
+    menu.setAttribute('aria-hidden', 'false');
+  }
+  function hideMenu() {
+    menu.style.display = 'none';
+    F.ctxMenuVisible = false;
+    menu.setAttribute('aria-hidden', 'true');
+  }
+  ctxArea.addEventListener('contextmenu', function (e) {
+    e.preventDefault();
+    F.rightClicks += 1;
+    F.lastContextMenu = { x: e.clientX, y: e.clientY };
+    $('#ro-right').textContent = String(F.rightClicks);
+    showMenu(e.clientX, e.clientY);
+    log('contextmenu #' + F.rightClicks);
+  });
+  menu.addEventListener('click', function (e) {
+    var item = e.target.closest('[data-t]');
+    if (!item) return;
+    F.ctxClicked = item.getAttribute('data-t');
+    hideMenu();
+    log('menu item: ' + F.ctxClicked);
+  });
+  document.addEventListener('mousedown', function (e) {
+    if (!menu.contains(e.target) && e.target !== ctxArea) hideMenu();
+  }, true);
+
+  /* ---------------- 拖拽（pointer 事件，和 NF.OS.makeDraggable 一致） ---------------- */
+  var src = $('[data-t="drag-src"]');
+  var zone = $('[data-t="drop-zone"]');
+  var dragging = false;
+  var grabOffset = { x: 0, y: 0 };
+  src.addEventListener('pointerdown', function (e) {
+    if (e.button !== 0) return;
+    dragging = true;
+    F.dragStart = { x: e.clientX, y: e.clientY };
+    grabOffset = { x: e.clientX - src.offsetLeft, y: e.clientY - src.offsetTop };
+    src.classList.add('dragging');
+    try { src.setPointerCapture(e.pointerId); } catch (err) { /* ignore */ }
+    log('drag start');
+  });
+  src.addEventListener('pointermove', function (e) {
+    if (!dragging) return;
+    F.dragMoves += 1;
+    F.dragEnd = { x: e.clientX, y: e.clientY };
+    src.style.left = (e.clientX - grabOffset.x) + 'px';
+    src.style.top = (e.clientY - grabOffset.y) + 'px';
+  });
+  function endDrag(e) {
+    if (!dragging) return;
+    dragging = false;
+    src.classList.remove('dragging');
+    var r = zone.getBoundingClientRect();
+    var inside = e.clientX >= r.left && e.clientX <= r.right && e.clientY >= r.top && e.clientY <= r.bottom;
+    F.dropped = inside;
+    zone.classList.toggle('hot', inside);
+    if (inside) {
+      src.style.left = (r.left + 60) + 'px';
+      src.style.top = (r.top + 48) + 'px';
+      log('drop inside zone ✓');
+    } else {
+      log('drop outside zone');
+    }
+  }
+  src.addEventListener('pointerup', endDrag);
+  src.addEventListener('pointercancel', endDrag);
+
+  /* ---------------- 键盘 ---------------- */
+  document.addEventListener('keydown', function (e) {
+    var info = {
+      key: e.key,
+      code: e.code,
+      ctrl: e.ctrlKey,
+      shift: e.shiftKey,
+      alt: e.altKey,
+      meta: e.metaKey
+    };
+    F.keys.push(info);
+    F.lastKey = info;
+    if (e.ctrlKey && e.shiftKey && String(e.key).toLowerCase() === 'n') {
+      F.combo = 'Ctrl+Shift+N';
+      log('combo Ctrl+Shift+N');
+    }
+    if (e.key === 'Enter') F.enterCount += 1;
+    if (e.key === 'ArrowDown') F.arrowDownCount += 1;
+  });
+  document.addEventListener('keyup', function () { F.keyUps += 1; });
+
+  var input = $('[data-t="text-input"]');
+  input.addEventListener('input', function () {
+    F.inputEvents += 1;
+    F.inputValue = input.value;
+    log('input: ' + input.value);
+  });
+
+  /* ---------------- canvas ---------------- */
+  var cv = $('[data-t="canvas"]');
+  var c2 = cv.getContext('2d');
+  c2.fillStyle = '#ff0000';
+  c2.fillRect(0, 0, 60, 50);
+  c2.fillStyle = '#00ff88';
+  c2.fillRect(60, 0, 60, 50);
+  c2.fillStyle = '#5b7cfa';
+  c2.fillRect(120, 0, 60, 50);
+  c2.fillStyle = '#151232';
+  c2.fillRect(0, 50, 180, 50);
+  c2.fillStyle = '#ffc94d';
+  c2.beginPath();
+  c2.moveTo(24, 78);
+  c2.lineTo(24, 70);
+  c2.lineTo(34, 70);
+  c2.lineTo(38, 74);
+  c2.lineTo(56, 74);
+  c2.lineTo(56, 86);
+  c2.lineTo(24, 86);
+  c2.closePath();
+  c2.fill();
+  cv.addEventListener('click', function (e) {
+    var r = cv.getBoundingClientRect();
+    F.canvasClick = { x: Math.round(e.clientX - r.left), y: Math.round(e.clientY - r.top) };
+    log('canvas click ' + F.canvasClick.x + ',' + F.canvasClick.y);
+  });
+
+  /* ---------------- ready ---------------- */
+  requestAnimationFrame(function () {
+    F.innerAtReady = { w: window.innerWidth, h: window.innerHeight, dpr: window.devicePixelRatio };
+    F.ready = true;
+    log('ready ' + window.innerWidth + 'x' + window.innerHeight);
+  });
+})();
+</script>
+</body>
+</html>

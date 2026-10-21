@@ -1,0 +1,12 @@
+{
+  "name": "new-folder-game",
+  "version": "0.3.0",
+  "private": true,
+  "description": "《新建文件夹》——一个假装是操作系统的整蛊建文件夹游戏",
+  "scripts": {
+    "start": "node server.mjs 4173",
+    "dev": "node server.mjs 4173",
+    "build": "node build.mjs",
+    "test": "node qa/playtest.mjs"
+  }
+}
